@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Quickstart: Load Balancing Demo
-category: tutorial
+category: tutorials
 ---
 
 <article class="mT">
