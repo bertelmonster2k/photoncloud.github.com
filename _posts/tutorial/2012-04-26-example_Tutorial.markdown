@@ -68,8 +68,10 @@ public void CreateNewRoom(string name)
 <p>
 In line 10/11 we create a set of customGameProperties. These can be changed anytime and they are inherent to this specific room. Think of it as a group of attributes you can freely define to use them inside your game logic. For example you could set up a game with a certain map activated or restrict access for players with lower level. The possibilites are vast and you can even use it to build your <a href="https://www.exitgames.com/Download/Photon">own matchmaking system</a>!
 </p>
+
 <p>
 In the following lines we use the "OpCreateRoom" operation to create and open up the room. In order the arguments are as follows:
+
 <ol>
 <li><b><FONT COLOR="#3366cc">string</font> roomName</b></br>
 The name of the room, used for identifying and joining the room.
