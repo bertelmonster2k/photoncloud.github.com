@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Photon in 5 Minutes
-category: basic
+categories: [basic, beginner]
 tags: [how-to, getting started, setup, quickstart, installation]
 ---
 
