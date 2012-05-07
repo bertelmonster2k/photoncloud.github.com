@@ -1,4 +1,10 @@
-﻿
+---
+layout: post
+title: Photon in 5 Minutes
+categories : [basic, beginner]
+tags : [how-to, getting started, setup, quickstart, installation]
+---
+
 <doc><article>
 <h2>Starting Photon in 5 Minutes</h2>
 <p>Photon is extremely easy to install and start. The SDK includes ready-to-use binaries which can be up and running within 5 minutes.</p>
