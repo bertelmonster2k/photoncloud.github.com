@@ -43,7 +43,7 @@ The third parameter (line 6) is the name of the player, we won't get into the ro
 <p>
 After you are connected, the Photon Cloud is ready to do your bidding. You don't have to micromanage from here on, everything is now handled for you! In the diagram below you can see that everything in the grey square is organized by Photon Cloud. The client only needs to send simple operations, like the ones next to the arrows.				
 <figure>
-<img alt="Load Balancing Diagram" src="img/JoinMSCloud.png" title="The wonderful world of Photon Cloud" />
+<img alt="Load Balancing Diagram" src="/assets/img/JoinMSCloud.png" title="The wonderful world of Photon Cloud" />
 <figcaption>The game servers that host the rooms reside in the cloud.</figcaption>
 </figure>
 </p>
