@@ -9,7 +9,7 @@
                 
                 <ul class="js-guides">
             {% for post in site.posts reversed %}
-                {% if post.categories contains main_cat %}
+                {% if post.categories contains page.main_cat %}
                 {% if post.categories contains cat %}
                     {% if page.title == post.title %}
                         <li class="disable"><span>{{ page.title }}</span></li>
