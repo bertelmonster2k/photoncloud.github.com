@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: post_server
 title: Photon in 5 Minutes
-categories: [basic, beginner]
-tags: [how-to, getting started, setup, quickstart, installation]
+categories: [photon_server, getting_started]
+tags: [how-to, getting_started, setup, quickstart, installation]
 ---
 
 <doc><article>
