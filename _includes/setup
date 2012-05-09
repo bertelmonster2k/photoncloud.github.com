@@ -1,0 +1,5 @@
+{% if site.ASSET_PATH %}
+    {% assign ASSET_PATH = site.ASSET_PATH %}
+{% else %}
+    {% capture ASSET_PATH %}{{ BASE_PATH }}/assets{% endcapture %}
+{% endif %}  
