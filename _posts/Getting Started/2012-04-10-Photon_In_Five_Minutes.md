@@ -4,7 +4,7 @@ title: Starting Photon in 5 Minutes
 categories: [photon-server, getting_started]
 tags: [how-to, getting_started, setup, quickstart, installation]
 ---
-
+{% include setup %}
 Photon is extremely easy to install and start.
 The SDK includes ready-to-use binaries which can be up and running within 5 minutes.
 
@@ -42,7 +42,7 @@ The deploy folder of the SDK contains everything you need to run Photon. All oth
 Run Photon's admin tool: PhotonControl.exe. This will create a traybar icon and menu to manage Photon.
 
 <figure>
-<img src="{{ site.ASSET_PATH }}/img/PhotonControl-Photon-RunApp.jpg" />
+<img src="{{ IMG }}/PhotonControl-Photon-RunApp.jpg" />
 <figcaption>"Run as application" in Photon Control</figcaption>
 </figure>
 
@@ -59,7 +59,7 @@ You can start it from the Photon Control menu: Photon, Run Testclient.
 The Testclient is a simple console application which will simulate 100 in 25 games with 4 players each.
 
 <figure>
-<img src="{{ IMG }}/img/PhotonControl-Photon-TestClient.jpg" />
+<img src="{{ IMG }}/PhotonControl-Photon-TestClient.jpg" />
 <figcaption>Successfully connected Testclient</figcaption>
 </figure>
 
