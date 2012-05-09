@@ -59,7 +59,7 @@ You can start it from the Photon Control menu: Photon, Run Testclient.
 The Testclient is a simple console application which will simulate 100 in 25 games with 4 players each.
 
 <figure>
-<img src="{{ ASSET_PATH }}img/PhotonControl-Photon-TestClient.jpg" />
+<img src="{{ ASSET_PATH }}/img/PhotonControl-Photon-TestClient.jpg" />
 <figcaption>Successfully connected Testclient</figcaption>
 </figure>
 
