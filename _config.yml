@@ -28,5 +28,5 @@ author :
 production_url : http://photoncloud.github.com
 
 # Basic setup
-BASE_PATH : "/"
-ASSET_PATH : "/assets"
+BASE_PATH : /
+ASSET_PATH : /assets
