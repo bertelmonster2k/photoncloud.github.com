@@ -4,7 +4,7 @@ title: Starting Photon in 5 Minutes
 categories: [photon-server, getting_started]
 tags: [how-to, getting_started, setup, quickstart, installation]
 ---
-{% include setup %}
+
 Photon is extremely easy to install and start.
 The SDK includes ready-to-use binaries which can be up and running within 5 minutes.
 
