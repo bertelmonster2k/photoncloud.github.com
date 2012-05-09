@@ -1,5 +1,5 @@
 ---
-layout: photon-server
+layout: page_photon-server
 title: Photon Server Docs
 ---
 
