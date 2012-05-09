@@ -42,7 +42,7 @@ The deploy folder of the SDK contains everything you need to run Photon. All oth
 Run Photon's admin tool: PhotonControl.exe. This will create a traybar icon and menu to manage Photon.
 
 <figure>
-<img src="{{ IMG }}/PhotonControl-Photon-RunApp.jpg" />
+<img src="{{ site.ASSET_PATH }}/img/PhotonControl-Photon-RunApp.jpg" />
 <figcaption>"Run as application" in Photon Control</figcaption>
 </figure>
 
