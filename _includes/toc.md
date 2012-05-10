@@ -2,6 +2,7 @@
     <nav>
         <ul>
     {% for cat in (page.sidebar_cats) %}
+    
             <li>
                 <h3>
                     <a href="#">{{ cat | replace:'_',' ' | capitalize }}</a>
@@ -9,6 +10,7 @@
                 
                 <ul class="js-guides">
             {% for post in site.posts reversed %}
+            
                 {% if post.categories contains page.main_cat %}
                 {% if post.categories contains cat %}
                     {% if page.title == post.title %}
@@ -18,8 +20,9 @@
                     {% endif %}
                 {% endif %}
                 {% endif %}
+                
             {% endfor %}
-            </ul>
+                </ul>
             </li>
             
     {% endfor %}
