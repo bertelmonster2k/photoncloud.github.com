@@ -31,4 +31,3 @@ Cloud versus Self-Hosting
   **Start instantly.** Photon Cloud let’s you register and immediately run your application. No setup needed. No server needed.                                                     Once downloaded, [start in less than in 5 Minutes](http://doc.exitgames.com/quickstart/photoninfiveminutes). Photon is easy to setup and runs locally as well as remote.
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-
