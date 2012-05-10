@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+{% include globals %}
 
 <head>
-{% include setup %}
     <meta charset="utf-8" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
@@ -14,9 +14,28 @@
     <meta name="author" content="{{ site.author.name }}" />
     <meta name="viewport" content="width=device-width; initial-scale=1.0" />
     
-    <link href="/shared/css/eg.css" rel="stylesheet" media="all">
+    <link href="{{ SHAREDCSS }}/eg.css" rel="stylesheet" media="all">
 
-    <link rel="shortcut icon" href="/shared/favicon.ico" />
+    <link rel="shortcut icon" href="{{ SHARED }}/favicon.ico" />
+ 
+    <script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-898741-3']);
+        _gaq.push(['_trackPageview']);
+    </script>
+ 
+    <!--[if lt IE 9]>
+    <script>
+        document.createElement("header" );  
+        document.createElement("footer" );  
+        document.createElement("section");   
+        document.createElement("aside"  );  
+        document.createElement("nav"    );  
+        document.createElement("article");   
+        document.createElement("hgroup" );   
+        document.createElement("time"   );
+    </script>
+    <!endif]-->
 </head>
 
 <body>
@@ -37,6 +56,98 @@
     </footer>
     
 </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script src="{{ SHAREDJS }}/jquery.toc.js"></script>
+<script src="{{ SHAREDJS }}/jquery.beautyOfCode.js"></script>
+
+<script>
+    jQuery.noConflict();
+
+    (function () {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+
+    jQuery(document).ready(function () {
+        jQuery.toc('#doc h1, #doc h2, #doc h3').appendTo('#toc').attr('class', 'toc');
+
+        jQuery.beautyOfCode.init({
+            theme: 'Default',
+            brushes: ['Xml', 'CSharp', 'Plain', 'JScript'],
+            defaults: {
+                'collapse': false,
+                'gutter': true,
+                'tab-size': 4,
+                'wrap-lines': true
+            },
+            ready: function () {
+                jQuery.beautyOfCode.beautifyAll();
+
+                jQuery('.codeSamples').each(function (i) {
+
+                    var codeSelectHTML = '';
+
+                    codeSelectHTML += '<form>';
+                    codeSelectHTML += '<label for="select-' + i + '">Select your preferred code language:</label>&nbsp;';
+                    codeSelectHTML += '<select id="select-' + i + '" size="1">'
+
+                    jQuery(this).children('.syntaxhighlighter').each(function (j) {
+
+                        // "detect"* language / brush
+                        // (*) assuming the last class name identifying the language ...
+                        var language = jQuery.trim(jQuery(this).attr('class').substr(jQuery(this).attr('class').lastIndexOf(' ')));
+
+                        codeSelectHTML += '<option value="' + jQuery(this).attr('id') + '"';
+                        if (jQuery(this).attr('id') === jQuery(this).parent().children(':first').attr('id')) {
+                            codeSelectHTML += ' selected="selected"';
+                        }
+                        else {
+                            // add this class to your CSS: .hide { display: none; visibility: hidden; }
+                            jQuery(this).addClass('hide');
+                        }
+                        jQuery(this).addClass('codeSample'); // helps toggling onMouseUp, see below
+                        //codeSelectHTML += ' onmouseup="showCodeSample(jQuery(this).attr(\'value\'));">';
+                        codeSelectHTML += '>' + language;
+                        codeSelectHTML += '</option>';
+                    });
+
+                    codeSelectHTML += '</select>'
+                    codeSelectHTML += '</form>';
+                    jQuery(this).prepend(codeSelectHTML);
+
+                    jQuery('#select-' + i).change(function () {
+                        showCodeSample(jQuery(this).val());
+                    });
+
+                });
+            }
+        });
+    });
+
+    function showCodeSample(ID) {
+
+        var codeSample = jQuery('#' + ID);
+
+        if (codeSample.hasClass('hide')) {
+            codeSample.siblings('.codeSample').each(function () {
+                // add class 'hide' only for elements not yet hidden
+                if (!jQuery(this).hasClass('hide')) {
+                    jQuery(this).addClass('hide');
+                };
+            });
+
+            codeSample.removeClass('hide');
+        }
+
+        // stop further event bubbling
+        return false;
+    }
+</script>
 </body>
 
 </html>
