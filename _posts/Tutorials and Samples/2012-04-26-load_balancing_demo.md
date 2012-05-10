@@ -1,7 +1,7 @@
 ---
 layout: article_cloud
 title: Loadbalancing Demo
-categories: [photon-cloud, tutorials]
+categories: [photon-cloud, tutorial]
 tags: [how-to, quickstart]
 ---
 
