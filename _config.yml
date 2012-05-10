@@ -12,7 +12,7 @@ pygments: true
 title : Exit Games Photon Documentation
 tagline: Documentation for Exit Games Photon Cloud and Exit Games Photon Server
 author :
-  name : Name Lastname
+  name : Piotr Photonski
   email : developer+doc@exitgames.com
   github : exitgames
   twitter : exitgames
@@ -28,5 +28,4 @@ author :
 production_url : http://photoncloud.github.com
 
 # Basic setup
-BASE_PATH : /
 ASSET_PATH : /assets
