@@ -4,6 +4,10 @@
     {% assign BASE_PATH = '/' %}
 {% endif %}
 
+{% if BASE_PATH == '/' %}
+    {% assign BASE_PATH = nil %}
+{% endif %}
+
 {% if site.ASSET_PATH and site.ASSET_PATH != '' %}
     {% assign ASSET_PATH = site.ASSET_PATH %}
 {% else %}
