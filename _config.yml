@@ -2,7 +2,7 @@
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:title 
 
-exclude: ["README", "SAMPLE.md"]
+exclude: ["README"]
 auto: true
 pygments: true
 
