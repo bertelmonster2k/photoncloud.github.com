@@ -7,7 +7,7 @@ sidebar_cats:
 - tutorials_and_samples
 - reference
 category: README
-tags [readme, getme, useme, ;)]
+tags: [readme, getme, useme, ;)]
 ---
 {% include globals %}
 {% include toc.md %}
