@@ -1,15 +1,8 @@
 ---
-<<<<<<< HEAD:_posts/Tutorials and Samples/2012-04-26-load_balancing_demo.md
-layout: article_cloud
-title: Loadbalancing Demo
-categories: [photon-cloud, tutorials]
-tags: [how-to, quickstart]
-=======
 layout: article_general
 title: Loadbalancing Demo
 categories: [photon-server, photon-cloud, getting_started]
 tags: [how-to, getting_started, setup, quickstart, installation]
->>>>>>> 062964c54860581dc4031c860ad7da21924d6099:_posts/Getting Started/2012-04-26-load_balancing_demo.md
 ---
 
 <p>
