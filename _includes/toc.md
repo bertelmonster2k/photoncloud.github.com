@@ -1,3 +1,9 @@
+{% if page.main_cat == 'photon-server' %}
+    {% assign GET = '?p=1' %}
+{% else %}
+    {% assign GET = '?p=2' %}
+{% endif %}
+
 <aside>
     <nav>
         <ul>
@@ -16,7 +22,7 @@
                     {% if page.title == post.title %}
                         <li class="disable"><span>{{ page.title }}</span></li>
                     {% else %}
-                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                        <li><a href="{{ post.url }}{{ GET }}">{{ post.title }}</a></li>
                     {% endif %}
                 {% endif %}
                 {% endif %}
