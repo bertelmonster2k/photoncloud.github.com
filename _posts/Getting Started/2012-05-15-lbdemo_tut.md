@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Cached Events
+title: Load Balancing Demo Tutorial
 categories: [photon-cloud, tutorials, getting_started]
 tags: [sample, quickstart, how-to]
 ---
