@@ -1,5 +1,5 @@
 ---
-layout: page_photon-cloud
+layout: page
 title: Photon Cloud Docs
 main_cat: photon-cloud
 sidebar_cats:
