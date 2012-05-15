@@ -233,5 +233,3 @@ specify the receiver groups. Please take a look
 that feature. Thanks for taking your time reading this post! If you have
 any questions or comments about this article please come over to our
 forum and tell us, we really appreciate your feedback!
-
-[To Document Top …](#top)
