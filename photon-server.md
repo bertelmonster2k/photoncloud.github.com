@@ -4,8 +4,8 @@ title: Photon Server Docs
 main_cat: photon-server
 sidebar_cats:
 - getting_started
-- tutorials_and_samples
-- reference
+- tutorials
+- references
 ---
 
 {% include toc.md %}

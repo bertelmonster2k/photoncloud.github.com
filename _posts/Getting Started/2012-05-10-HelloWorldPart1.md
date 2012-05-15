@@ -1,8 +1,8 @@
 ---
 layout: article
 title: Hello World - Part 1
-categories: [photon-server, getting_started]
-tags: [how-to, setup, installation]
+categories: [photon-server, getting_started, tutorials]
+tags: [how-to, setup, installation, lite]
 ---
 {% include globals %}
 

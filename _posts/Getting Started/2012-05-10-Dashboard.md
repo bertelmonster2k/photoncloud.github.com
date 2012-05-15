@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Photon Control 
-categories: [photon-server, getting_started]
+categories: [photon-server, getting_started, references]
 tags: [setup, installation]
 ---
 {% include globals %}
