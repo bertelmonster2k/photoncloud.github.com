@@ -4,8 +4,8 @@ title: Photon Cloud Docs
 main_cat: photon-cloud
 sidebar_cats:
 - getting_started
-- tutorials_and_samples
-- reference
+- tutorials
+- references
 ---
 {% include toc.md %}
 
