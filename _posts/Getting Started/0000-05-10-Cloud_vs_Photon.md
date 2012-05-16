@@ -14,9 +14,6 @@ Games. You can completely concentrate on your application client while
 hosting, server operations and scaling is all taken care of in the
 Photon Cloud.
 
-[Sample Link](/Photon_In_Five_Minutes)
-{{ page.tags }}
-
 Cloud versus Self-Hosting
 -------------------------
 
