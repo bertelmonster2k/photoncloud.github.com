@@ -167,7 +167,7 @@ main_categories: [photon-server, photon-cloud]
     
     function getActiveProductFromUrl() {
         var activeProduct = (getQueryString()['p'] == 1)? 'photon-server' : 'photon-cloud';
-        
+        console.info('active is :' + activeProduct);
         return activeProduct;
     }
 </script>
