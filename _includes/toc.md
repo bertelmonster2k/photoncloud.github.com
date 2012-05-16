@@ -7,7 +7,7 @@
             {% assign GET = '?p=2' %}
         {% endif %}
     
-        <ul class="hide" id="{{ product }}">
+        <ul class="hide" id="nav-{{ product }}">
         {% for cat in (page.sidebar_categories) %}
         
                 <li>
