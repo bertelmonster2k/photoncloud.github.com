@@ -2,7 +2,7 @@
 layout: article
 title: Starting Photon in 5 Minutes
 categories: [photon-server, getting_started]
-tags: [how-to, getting_started, setup, quickstart, installation]
+tags: [how-to, setup, quickstart, installation]
 ---
 {% include globals %}
 
