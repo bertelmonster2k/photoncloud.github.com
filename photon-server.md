@@ -2,8 +2,13 @@
 layout: page
 title: Photon Server Docs
 main_category: photon-server
-main_categories: [photon-server, photon-cloud]
-sidebar_categories: [getting_started, tutorials, references]
+main_categories:
+- photon-server
+- photon-cloud
+sidebar_categories:
+- getting_started
+- tutorials
+- references
 ---
 
 {% include toc.md %}
