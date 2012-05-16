@@ -1,11 +1,8 @@
 ---
 layout: page
 title: Photon Server Docs
-main_cat: photon-server
-sidebar_cats:
-- getting_started
-- tutorials
-- references
+main_category: photon-server
+sidebar_categories: [getting_started, tutorials, references]
 ---
 
 {% include toc.md %}

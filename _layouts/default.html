@@ -75,6 +75,8 @@
 
     jQuery(document).ready(function () {
         jQuery.toc('#doc h1, #doc h2, #doc h3').appendTo('#toc').attr('class', 'toc');
+        
+        jQuery('#nav-' + getActiveProductFromUrl()).removeClass('hide');
 
         jQuery.beautyOfCode.init({
             theme: 'Default',
@@ -146,6 +148,24 @@
 
         // stop further event bubbling
         return false;
+    }
+    
+    function getQueryString() {
+        var result = {},
+            queryString = location.search.substring(1),
+            re = /([^&=]+)=([^&]*)/g, m;
+
+        while (m = re.exec(queryString)) {
+            result[decodeURIComponent(m[1])] = decodeURIComponent(m[2]);
+        }
+
+        return result;
+    }
+    
+    function getActiveProductFromUrl() {
+        var activeProduct = (getQueryString()['p'] == 1)? 'photon-server' : 'photon-cloud';
+        
+        return activeProduct;
     }
 </script>
 </body>

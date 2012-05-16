@@ -1,11 +1,8 @@
 ---
 layout: page
 title: Photon Cloud Docs
-main_cat: photon-cloud
-sidebar_cats:
-- getting_started
-- tutorials
-- references
+main_category: photon-cloud
+sidebar_categories: [getting_started, tutorials, references]
 ---
 {% include toc.md %}
 
