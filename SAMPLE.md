@@ -12,6 +12,6 @@ tags: [readme, getme, useme]
 {% include globals %}
 {% include toc.md %}
 
-[Sample Link]({% post_url 2012-04-10-Photon_In_Five_Minutes %})
+[Sample Link](/Photon_In_Five_Minutes)
 
 base path: {{ BASE_PATH }}
