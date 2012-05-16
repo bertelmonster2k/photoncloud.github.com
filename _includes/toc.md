@@ -38,4 +38,3 @@
     {% endfor %}
     </nav>
 </aside>
-</aside>
