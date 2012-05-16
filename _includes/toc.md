@@ -1,8 +1,3 @@
----
-main_categories: [photon-server, photon-cloud]
----
-
-
 <aside>
     <nav>
     {% for product in (page.main_categories) %}
@@ -42,4 +37,5 @@ main_categories: [photon-server, photon-cloud]
     
     {% endfor %}
     </nav>
+</aside>
 </aside>
