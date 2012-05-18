@@ -64,7 +64,7 @@ Webplayer platforms like Unity Webplayer, Flash and Silverlight request
 authorization before they contact a server.
 
 It has it's own page in the DevNet: [Policy
-Application](/policyapp)
+Application](/PolicyApp)
 
 #### CounterPublisher
 
