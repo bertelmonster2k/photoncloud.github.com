@@ -42,16 +42,25 @@ Hands-On
 We will start with a C\#/Windows/Console project and name it
 Helloworld1:
 
-![](../img/HelloWorld-NewProject.png) New Project
+![](../img/HelloWorld-NewProject.png)
+<figure>
+<figcaption>New Project</figcaption>
+</figure>
 
 We need to add a reference to PhotonDotNet.dll:
 
-![](../img/HelloWorld-AddReference.png) Add PhotonDotNet.dll reference
+![](../img/HelloWorld-AddReference.png)
+<figure>
+<figcaption>Add PhotonDotNet.dll reference</figcaption>
+</figure>
 
 Select the folder where you extracted the Photon-Dotnet SDK (tbd link to
 downloads) and browse to lib/debug where you will find PhotonDotNet.dll
 
-![](../img/HelloWorld-BrowseReference.png) Select Browse ...
+![](../img/HelloWorld-BrowseReference.png)
+<figure>
+<figcaption>Select Browse ...</figcaption>
+</figure>
 
 The next step ist to add "using ExitGames.Client.Photon;"
 
@@ -71,7 +80,10 @@ Now we will implement the listener where we receive the PhotonPeer
 notifications. So the next step is adding the interface to the **Class
 Program**:
 
-![](../img/HelloWorld-AddInterface.png) Add listener interface
+![](../img/HelloWorld-AddInterface.png)
+<figure>
+<figcaption>Add listener interface</figcaption>
+</figure>
 
 For now we will only look into **OnStatusChanged** where status changes
 of the PhotonPeer are notified and ignore the other three callbacks. So
@@ -143,7 +155,10 @@ notifications:
 Ok. We are done. Hit F5. If Photon Server is running you will see the
 following:
 
-![](../img/HelloWorld-Output1.png) Console output
+![](../img/HelloWorld-Output1.png) 
+<figure>
+<figcaption>Console output</figcaption>
+</figure>
 
 That's it you are connected to the Photon Server in part 2 we will look
 on how to start using the connection to the Photon Server.
@@ -153,7 +168,10 @@ Photon Server not found
 
 If Photon Server is not running you will get a disconnect notification:
 
-![](../img/HelloWorld-Output2.png) Console output
+![](../img/HelloWorld-Output2.png)
+<figure>
+<figcaption>Console output</figcaption>
+</figure>
 
 In the screenshot above you see the behavior when trying to connect
 against a locally hosted Photon Server
@@ -165,7 +183,10 @@ lib raises an exception.
 The normal behavior connecting to a remote server where photon is not
 running would a disconnect triggered after a timeout:
 
-![](../img/HelloWorld-Output3.png) Console output
+![](../img/HelloWorld-Output3.png)
+<figure>
+<figcaption>Console output</figcaption>
+</figure>
 
 You can try this out simply by connecting to a site you now is not
 running photon "google.com" for instance
@@ -192,7 +213,10 @@ To see the host unknown behavior change your code as follows:
                 Console.WriteLine("Unknown hostname!");
 ~~~~
 
-![](../img/HelloWorld-Output4.png) Console output
+![](../img/HelloWorld-Output4.png)
+<figure>
+<figcaption>Console output</figcaption>
+</figure>
 
 Final Demo Code
 ---------------
