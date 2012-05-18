@@ -41,10 +41,10 @@ The LitePeer covers all Lite Application Operations this way.
 Per Operation, the application on the server can send a result. Imagine
 a "GetHighscores" Operation and the use for a result becomes obvious and
 would contain a list of scores. Other RPCs, like RaiseEvent, can safely
-omit the result if its not useful.
+omit the result if it's not useful.
 
 Getting the result of an Operation takes a moment in general, as there
-is network lag. Because of that, any result is provided asynchronoulsy
+is network lag. Because of that, any result is provided asynchronously
 by a call to IPhotonPeerListener.OperationResult().
 
 Per platform, the result callback might look different. The following
@@ -152,4 +152,4 @@ or supply you with an "Invocation ID":
 
 In most cases, the definition of new Operations is done server-side, so
 the process to implement and use those is explained in that context.
-Read: "[Adding Operations](/liteandlitelobbyaddon/addingoperations)".
+Read: "[Adding Operations](/adding_operations)".
