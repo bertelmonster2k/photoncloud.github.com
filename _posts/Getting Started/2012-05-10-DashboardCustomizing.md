@@ -10,13 +10,13 @@ Photon Dashboard: Customizing
 -----------------------------
 
 In the previous part of the [Photon Dashboard
-tutorial](/photonserver/dashboard), we have discussed how to install and
+tutorial](/dashboard), we have discussed how to install and
 display Photon's built in Performance Counters. Now we are going to see
 how we can easily create our own, custom counters and adjust the layout
 of the Photon Dashboard to our needs.
 
 Let's assume you have a custom application that is extending the [Lite
-application](photonclient/overview), and want to add another counter -
+application](/WhatsInPhoton3), and want to add another counter -
 for example, imagine that you have a custom operation "SendMessage" and
 that you want to know how many messages are sent per second.
 
@@ -30,8 +30,10 @@ for this purpose.
 Make sure that your application has a reference to the ExitGamesLibs.dll
 from the /lib folder:
 
-![](../img/DashboardCustomizing-Reference.png) Referencing the
-ExitGamesLibs.dll
+![](../img/DashboardCustomizing-Reference.png)
+<figure>
+<figcaption>Referencing the ExitGamesLibs.dll</figcaption>
+</figure>
 
 ### Counter declaration
 
@@ -150,8 +152,10 @@ To extend the Photon Dashboard with your custom counters, it's helpful
 to understand roughly how the Dashboard is working internally. The
 following schema should give you a good idea.
 
-![](../img/DashboardCustomizing-Schema.png) Components of the Photon
-Dashboard
+![](../img/DashboardCustomizing-Schema.png) 
+<figure>
+<figcaption>Components of the Photon Dashboard</figcaption>
+</figure>
 
 A counter receiver is listening on the specified UDP port for the
 counter data published by Photon. It stores the received values in RRD
@@ -176,7 +180,7 @@ Extending the Photon Dashboard
 ### Counter Receiver
 
 See the first part of the [Photon Dashboard
-tutorial](/photonserver/dashboard)to learn how to configure the Counter
+tutorial](/dashboard)to learn how to configure the Counter
 Receiver, e.g. the ports / IPs it is listening to.
 
 ### Graph renderer
