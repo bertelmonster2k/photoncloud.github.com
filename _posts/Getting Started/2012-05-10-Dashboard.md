@@ -24,7 +24,10 @@ a different server and display counters from various Photon instances.
 Photon performance counters are easily extensible and the display
 options can be fully customized.
 
-![](../img/Dashboard-Overview.png) Overview: The Photon Dashboard
+![](../img/Dashboard-Overview.png)
+<figure>
+<figcaption>Overview: The Photon Dashboard</figcaption>
+</figure>
 
 Photon's performance counters
 -----------------------------
@@ -32,14 +35,14 @@ Photon's performance counters
 ### In-Memory counters
 
 Photon's applications are using in-memory performance counters to track
-application-specific statistics, e.g. the number of current games.\
- These counters don't show up in the Windows Performance monitor, but
+application-specific statistics, e.g. the number of current games.
+These counters don't show up in the Windows Performance monitor, but
 they are broadcasted to the Photon Dashboard.
 
 Check the 2nd part of this tutorial for more information on Exit Games'
 performance counters and how to add your own performance counters to
 your application: [Photon Dashboard
-Customizing](photonserver/dashboardcustomizing)
+Customizing](/dashboardcustomizing)
 
 ### Windows Performance counters
 
@@ -50,13 +53,17 @@ Windows Performance counters instead.
 If you want to make use of these counters, you need to install them
 before you start Photon. This can be done in Photon Control:
 
-![](../img/Dashboard-InstallCounter.png) Windows Performance Counter
-Installation
+![](../img/Dashboard-InstallCounter.png) 
+<figure>
+<figcaption>Windows Performance Counter Installation</figcaption>
+</figure>
 
 Check Windows' Performance Monitor to see the installed counters:
 
-![](../img/Dashboard-PerformanceMonitor.png) Photon's counter show up at
-the Performance Monitor
+![](../img/Dashboard-PerformanceMonitor.png) 
+<figure>
+<figcaption>Photon's counter show up at the Performance Monitor</figcaption>
+</figure>
 
 Photon is writing data to these counters automatically once it is
 started.
@@ -70,7 +77,7 @@ In order to display the counters at the Photon Dashboard, the counter
 data needs to be published on a specific UDP port, on which the
 Dashboard is listening for the data.
 
-The [Lite application](photonclient/overview) is making use of a
+The [Lite application](/WhatsInPhoton3) is making use of a
 "CounterPublisher" class to broadcast the in-memory counter data. It can
 be enabled / disabled, and it's port and IP can be configured in the
 /deploy/Lite/bin/Lite.dll.config:
@@ -113,7 +120,10 @@ in the /deploy/CounterPublisher/bin/CounterPublisher.dll.config.
 The following schema shows which types of performance counters are used
 by the different parts of Photon, and how they are published:
 
-![](../img/Dashboard-PhotonSchema.png) Photon's Performance Counters
+![](../img/Dashboard-PhotonSchema.png) 
+<figure>
+<figcaption>Photon's Performance Counters</figcaption>
+</figure>
 
 The Photon Dashboard
 --------------------
@@ -130,8 +140,10 @@ webserver to render HTML sites with performance graphs.
 The Dashboard can be installed and started from Photon control:
 
 ![](../img/Dashboard-InstallDashboard.png)
-![](../img/Dashboard-StartDashboard.png) Install and Start the Dashboard
-from Photon Control
+![](../img/Dashboard-StartDashboard.png) 
+<figure>
+<figcaption>Install and Start the Dashboard from Photon Control</figcaption>
+</figure>
 
 ### Web UI
 
@@ -139,8 +151,10 @@ The Dashboard comes with a built-in web server. By default, you can
 acess it on http://localhost:8088/, or you can use the Photon control to
 open the Dashboard:
 
-![](../img/Dashboard-OpenUI.png) Acces the Dashboard UI from Photon
-Control
+![](../img/Dashboard-OpenUI.png) 
+<figure>
+<figcaption>Acces the Dashboard UI from Photon Control</figcaption>
+</figure>
 
 In the upper left corner of the Dashboard site, you'll find a list of
 all machines that are publishing counter data to this Dashboard, as well
@@ -148,7 +162,10 @@ as a list of all applications from which the published counters are
 originating. Choose the appropriate machine / application to find the
 counters you are interested in.
 
-![](../img/Dashboard-UI.png) The Photon Dashboard UI
+![](../img/Dashboard-UI.png) 
+<figure>
+<figcaption>The Photon Dashboard UI</figcaption>
+</figure>
 
 ### Configuration options
 
