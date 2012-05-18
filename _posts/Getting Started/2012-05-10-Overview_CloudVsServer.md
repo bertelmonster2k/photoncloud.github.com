@@ -28,7 +28,7 @@ Cloud versus Self-Hosting
 
   **Game logic.** All custom logic takes place on the application client to allow a zero-hassle experience.                                                                         The server's logic can be fully customized in C\#. Several pre-defined applications are available as source and provide a high performance framework for your application. Benefit from our protocols and abstraction of low level functionality and add any feature you might be missing.
 
-  **Start instantly.** Photon Cloud let’s you register and immediately run your application. No setup needed. No server needed.                                                     Once downloaded, [start in less than in 5 Minutes](http://doc.exitgames.com/quickstart/photoninfiveminutes). Photon is easy to setup and runs locally as well as remote.
+  **Start instantly.** Photon Cloud let’s you register and immediately run your application. No setup needed. No server needed.                                                     Once downloaded, [start in less than in 5 Minutes](/Photon_In_Five_Minutes). Photon is easy to setup and runs locally as well as remote.
   ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
