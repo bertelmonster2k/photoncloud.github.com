@@ -63,5 +63,5 @@ tags: [overview, quickstart, mmo]
 -   Optimized position updates: Clients send updates only when they
     move.
 -   Duplicate user recognition: A subsequent user connection resets the
-    previous connection.
+    previous connection. 
 
