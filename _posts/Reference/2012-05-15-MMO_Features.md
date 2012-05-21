@@ -9,9 +9,7 @@ tags: [overview, quickstart, mmo]
 -   Region-based interest management
     -   Square tile algorithm with variable width, height and tile size
         is implemented.
-    -   Easily replaceable with other region algorithms (hexagonal, etc
-        – see
-        [http://gram.cs.mcgill.ca/papers/boulanger-06-comparing.pdf](http://gram.cs.mcgill.ca/papers/boulanger-06-comparing.pdf))
+    -   Easily replaceable with other region algorithms (hexagonal, etc. see)
 
 -   Items (Avatars, NPCs, shared game objects)
     -   Clients can spawn, destroy and move items.
