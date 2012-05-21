@@ -6,8 +6,6 @@ tags: [mmo, overview]
 ---
 {% include globals %}
 
-MMO Peer State Machine
-----------------------
 
 A client peer has one of the following states:
 
@@ -16,12 +14,15 @@ A client peer has one of the following states:
 2.  WorldEntered: Player entered a world with operation EnterWorld.
 3.  Disconnected: Client disconnected.
 
-This diagram shows all transitions: \
+This diagram shows all transitions: 
 
-![](../img/mmo-stateMachine.png)MMO Peer State Machine
+<figure>
+<img src="{{ IMG }}/mmo-stateMachine.png" />
+<figcaption>MMO Peer State Machine</figcaption>
+</figure>
 
-The peer uses a different operation handler for each state. \
- This allows operations to behave differently in each state. \
+The peer uses a different operation handler for each state. 
+ This allows operations to behave differently in each state. 
  The following operation handlers are used:
 
 1.  State Connected: Photon.MmoDemo.Server.MmoPeer
@@ -29,9 +30,9 @@ The peer uses a different operation handler for each state. \
 3.  State Disconnected:
     Photon.SocketServer.Rpc.OperationHandlerDisconnected
 
-The client should always wait for the related operation response / event
+The client should always wait for the related operation response event
 after calling a state changing operation; the peer state and therefore
 the current operation handler (operation behavior) is not guaranteed
-until the response / event is received. For operation *EnterWorld* it's
+until the response event is received. For operation *EnterWorld* it's
 the operation response, for operation *ExitWorld* it's the event
 *WorldExited*.
