@@ -19,8 +19,10 @@ spots a Photon process running, it turns blue.
 You can setup PhotonControl to autorun on login, making it easier to
 spot Photon on any machine.
 
-![](../img/PhotonControl-EnableAutostart.jpg) Enable PhotonControl
-Autostart
+![](../img/PhotonControl-EnableAutostart.jpg) 
+<figure>
+<figcaption>Enable PhotonControl Autostart</figcaption>
+</figure>
 
 The key features are:
 
@@ -57,7 +59,7 @@ again at the new location.
 
 ### Logs
 
-Photon is logging essential information like its state and exceptions to
+Photon is logging essential information like it's state and exceptions to
 several log files. There are two "log" folders:
 
 -   The deploy/log folder is created after start for application logs.
@@ -125,7 +127,7 @@ These are the most common pitfalls you should check as well.
     rights and your hoster most likely used hardware firewalls.
 -   **Lag:** By default, the roundtrip time is about 50ms, even locally.
     This depends on a setting, explained on the setup page. Read: [Send
-    Delay and Ack Delay](/photonserver/setupandconfig)
+    Delay and Ack Delay](/setupandconfig)
 
 ### Dump File Setup
 
