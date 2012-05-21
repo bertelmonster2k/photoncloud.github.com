@@ -6,11 +6,6 @@ tags: [overview, mmo]
 ---
 {% include globals %}
 
-MMO Basics
-----------
-
-### Interest Management
-
 An object that moves through a virtual world generates position update
 events. To display a fluid movement on other clients a minimum of about
 10 events per second is required. Clients that are connected to a world
