@@ -6,16 +6,12 @@ tags: [overview, how-to]
 ---
 {% include globals %}
 
-Binary Protocol
----------------
-
 Photon and its clients are using a highly optimized binary protocol to
 communicate. It's compact, yet easy to parse. You don't have to know its
 details, as it is handled behind the scenes. Just in case you want to
 know it anyways, this page describes it.
 
-Communication Layers
---------------------
+## Communication Layers
 
 The Photon binary protocols are organized in several layers. On its
 lowest level, UDP is used to carry the messages you want to send. Within
@@ -25,7 +21,10 @@ messages, time synchronization and various others.
 
 The following chart shows the individual layers and their nesting:
 
-![](../img/BinaryProtocol-udp-layers.png) Layers of the binary protocol
+<figure>
+<img src="{{ IMG }}/BinaryProtocol-udp-layers.png" />
+<figcaption>Layers of the binary protocol</figcaption>
+</figure>
 
 In words: Any UDP package contains an Enet header and at least one enet
 command. Each enet command carries our messages: An Operation, result or
@@ -39,8 +38,7 @@ given message becomes.
 
 To save you this work, we have an example, too.
 
-Example: Join "somegame"
-------------------------
+## Example: Join "somegame"
 
 Let's take a look at the operation join (implemented by the Lite
 Application). Without properties, this is an operation with a single
@@ -75,10 +73,12 @@ The server will have to acknowledge this command. The ACK command is 20
 bytes. If this is sent alone in a package, it will take up 40 bytes in
 return.
 
-![](../img/BinaryProtocol-HexBytes.jpg) Join "somegame" in Wireshark
+<figure>
+<img src="{{ IMG }}/BinaryProtocol-HexBytes.jpg" />
+<figcaption>Join "somegame" in Wireshark</figcaption>
+</figure>
 
-Operation Content - Serializable Types
---------------------------------------
+## Operation Content - Serializable Types
 
 type (C\#)
 
@@ -176,8 +176,7 @@ operation parameters. An operation result will always contain: opCode,
 returnCode and a debug string. Events always contain: evCode, actorNr
 and the event data Hashtable.
 
-Enet Commands
--------------
+## Enet Commands
 
 name
 
@@ -275,8 +274,7 @@ both \
 
 reliable, used if the payload does not fit into a single datagram\
 
-UDP Packet Content - Headers
-----------------------------
+## UDP Packet Content - Headers
 
 name
 
