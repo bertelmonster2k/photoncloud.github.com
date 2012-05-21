@@ -6,16 +6,16 @@ tags: [comparison, quickstart]
 ---
 {% include globals %}
 
-Overview
---------
+## Overview
+
 
 Photon Cloud is a fully managed service run by the experts of Exit
 Games. You can completely concentrate on your application client while
 hosting, server operations and scaling is all taken care of in the
 Photon Cloud.
 
-Cloud versus Self-Hosting
--------------------------
+## Cloud versus Self-Hosting
+
 <table>
 <thead>
     <tr>
