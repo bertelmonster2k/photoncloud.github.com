@@ -6,8 +6,7 @@ tags: [setup, installation]
 ---
 {% include globals %}
 
-Photon Dashboard
-----------------
+## Photon Dashboard
 
 Photon makes use of Windows Performance Counters as well as custom
 in-memory counters to track server performance and statistics, e.g. CPU
@@ -24,8 +23,8 @@ a different server and display counters from various Photon instances.
 Photon performance counters are easily extensible and the display
 options can be fully customized.
 
-![](../img/Dashboard-Overview.png)
 <figure>
+<img src="{{ IMG }}/Dashboard-Overview.png" />
 <figcaption>Overview: The Photon Dashboard</figcaption>
 </figure>
 
@@ -53,15 +52,15 @@ Windows Performance counters instead.
 If you want to make use of these counters, you need to install them
 before you start Photon. This can be done in Photon Control:
 
-![](../img/Dashboard-InstallCounter.png) 
 <figure>
+<img src="{{ IMG }}/Dashboard-InstallCounter.png" />
 <figcaption>Windows Performance Counter Installation</figcaption>
 </figure>
 
 Check Windows' Performance Monitor to see the installed counters:
 
-![](../img/Dashboard-PerformanceMonitor.png) 
 <figure>
+<img src="{{ IMG }}/Dashboard-PerformanceMonitor.png" />
 <figcaption>Photon's counter show up at the Performance Monitor</figcaption>
 </figure>
 
@@ -120,8 +119,8 @@ in the /deploy/CounterPublisher/bin/CounterPublisher.dll.config.
 The following schema shows which types of performance counters are used
 by the different parts of Photon, and how they are published:
 
-![](../img/Dashboard-PhotonSchema.png) 
 <figure>
+<img src="{{ IMG }}/Dashboard-PhotonSchema.png" />
 <figcaption>Photon's Performance Counters</figcaption>
 </figure>
 
@@ -139,9 +138,9 @@ webserver to render HTML sites with performance graphs.
 
 The Dashboard can be installed and started from Photon control:
 
-![](../img/Dashboard-InstallDashboard.png)
-![](../img/Dashboard-StartDashboard.png) 
 <figure>
+<img src="{{ IMG }}/Dashboard-InstallDashboard.png" />
+<img src="{{ IMG }}/Dashboard-StartDashboard.png" />
 <figcaption>Install and Start the Dashboard from Photon Control</figcaption>
 </figure>
 
@@ -151,9 +150,9 @@ The Dashboard comes with a built-in web server. By default, you can
 acess it on http://localhost:8088/, or you can use the Photon control to
 open the Dashboard:
 
-![](../img/Dashboard-OpenUI.png) 
 <figure>
-<figcaption>Acces the Dashboard UI from Photon Control</figcaption>
+<img src="{{ IMG }}/Dashboard-OpenUI.png" />
+<figcaption>Access the Dashboard UI from Photon Control</figcaption>
 </figure>
 
 In the upper left corner of the Dashboard site, you'll find a list of
@@ -162,8 +161,8 @@ as a list of all applications from which the published counters are
 originating. Choose the appropriate machine / application to find the
 counters you are interested in.
 
-![](../img/Dashboard-UI.png) 
 <figure>
+<img src="{{ IMG }}/Dashboard-UI.png" />
 <figcaption>The Photon Dashboard UI</figcaption>
 </figure>
 
