@@ -70,8 +70,10 @@ for you! In the diagram below you can see that everything in the grey
 square is organized by Photon Cloud. The client only needs to send
 simple operations, like the ones next to the arrows.
 
-![Load Balancing
-Diagram](img/JoinMSCloud.png "The wonderful world of Photon Cloud") The
+<figure>
+<img src="{{ IMG }}/JoinMSCloud.png" />
+<figcaption>The wonderful world of Photon Cloud</figcaption>
+</figure>
 game servers that host the rooms reside in the cloud.
 
 Now that we are connected to the Master Server we can list, create and
@@ -136,9 +138,11 @@ open up the room. In order the arguments are as follows:
     traversing rooms, your customPlayerProperties will stay with the
     client/player for the time being.
 
-![Properties UML
-Example](img/PropertiesCloud.png "Example For Properties") Simple
-Example Properties
+<figure>
+<img src="{{ IMG }}/PropertiesCloud.png" />
+<figcaption>Example For Properties</figcaption>
+</figure>
+Simple Example Properties
 
 Now that we successfully created a room, it's time for other clients to
 join! Joining a room is quick and easy and shouldn't need any further
@@ -167,8 +171,11 @@ even customize the way of exchanging information by specifying a
 protocol (UDP vs. TCP or reliable UDP vs. unreliable UDP) with simple
 parameters, depending on your needs.
 
-![Send Events Diagram](img/SendEventCloud.png "Sending Events") Events
-will be distributed among participants in the room. You can decide if
+<figure>
+<img src="{{ IMG }}/SendEventCloud.png" />
+<figcaption>Sending Events</figcaption>
+</figure> 
+Events will be distributed among participants in the room. You can decide if
 you want to sent events to a specific list of players, groups or
 everyone.
 
@@ -199,7 +206,7 @@ events check [here](https://www.exitgames.com/Download/Photon)!
 **Hashtable evData** You can fill this hashtable with all the data you
 need to transfer. This is the central data-structure you will use to
 exchange information between clients. However, recurring and
-standardized steps for your game logic (f.e. end of turn) should rather
+standardized steps for your game logic (e.g. end of turn) should rather
 be send as events.
 
 **bool sendReliable** When you set this flag to "true", you switch from
