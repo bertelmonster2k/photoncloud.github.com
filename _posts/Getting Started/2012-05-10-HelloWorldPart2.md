@@ -6,10 +6,7 @@ tags: [how-to, setup, installation, lite]
 ---
 {% include globals %}
 
-Hello World - Part 2
-====================
-
-In Part 1 we introduced some basic concepts of the client api:
+In Part 1 we introduced some basic concepts of the client API:
 PhotonPeer, Service(), Connect() and the listener/callback design.
 Buildling on the application of part 1 (initial connection setup) we
 will look into how to use this connection to create a simple chat, where
@@ -49,8 +46,7 @@ We are going to look into two sets of concepts:
     philosophy. For more details on Applications see (tbd) and on Lite
     see (tbd).
 
-Preparation: Refactoring the main flow
---------------------------------------
+## Preparation: Refactoring the main flow
 
 We will start a new C\#/Windows/Console project, name it Helloworld2,
 add a reference to PhotonDotNet.dll and copy the Program.cs of part 1:
@@ -99,10 +95,9 @@ Next we'll refactor the code in main as follows
 
 Note: in line 19 we commented the "." output. Optionally you can replace
 it by Debug.Write("."); to make sure your loop is working. To see this
-check your tab-output in you Visual Studio.
+check your tab-output in your Visual Studio.
 
-Operations and Events
----------------------
+## Operations and Events
 
 Now we are done with the preparation work we can start to see how we
 send an operation request to the server.
@@ -226,7 +221,7 @@ C:\\...\\HelloWorld2\\bin\\Debug\>HelloWorld2.exe\
 
 As you can see the first operation (Join) returned **OK**. It also
 returned the actor number 1 (**-\>My PlayerNr (or ActorNr) is:1**). If
-you start a second Hellowrold2.exe you will see a "2" instead. The next
+you start a second Helloworld2.exe you will see a "2" instead. The next
 client would get a "3".
 
 Note: starting and stopping clients might lead to higher actor nr
@@ -272,7 +267,7 @@ either byte or short keys in the evData hashtable.
 
 ### OnEvent
 
-For an easy way to print out readable operation codeswe will define the
+For an easy way to print out readable operation codes we will define the
 following enum: (this won't be necessary for 3.0):
 
 ~~~~ {.code}
@@ -346,24 +341,23 @@ The first client receives 3 events:
 3.  the 101 event the second client sent to **all others** in the room
 
 **all others** is the default behavior of OpRaisEvent (for more details
-see sdk documentation of LitePeer).
+see SDK documentation of LitePeer).
 
 The second client only receives one join event (triggered by it's own
 join).
 
-In this tutorial we only used **PhotonPeer**. The client sdk also
+In this tutorial we only used **PhotonPeer**. The client SDK also
 includes a **LitePeer** to ease the use of Lite features. It extends the
 PhotonPeer so that to join a room with LitePeer you only need to call
 peer.OpJoin("MyRoomName"). To see how this works just replace PhotonPeer
 by LitePeer. An other powerfull Lite features worth looking into are
 **Properties**. In Lite you can set room and player (or actor)
 properties. As an example you could set initial configuration values
-(e.g. te game map, difficulty, ...) as room properties or the players
-nicknames as actor properties. (for more details see the client sdk
+(e.g. the game map, difficulty, ...) as room properties or the players
+nicknames as actor properties. (for more details see the client SDK
 documentation and Lite tbd).
 
-Final Demo Code
----------------
+## Final Demo Code
 
 In the code that follows we added a couple of lines to increase
 debug-output that should help you dig deeper into the details of how
