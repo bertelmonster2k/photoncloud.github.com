@@ -6,8 +6,7 @@ tags: [sample, lite, lobby]
 ---
 {% include globals %}
 
-Persisting Data
----------------
+## Persisting Data
 
 Persistency is currently not covered in the SDKs we provide. None of our
 applications saves any data. Every game and application is different and
@@ -26,8 +25,7 @@ C\#. As example, take a look at:
 -   [Lightspeed](http://www.mindscapehq.com/products/lightspeed): high
     performance .NET domain modeling and O/R mapping framework
 
-Trigger game-logic in intervals
--------------------------------
+## Trigger game-logic in intervals
 
 If you want your server application to execute some logic in intervals,
 add this as method into LiteGame and schedule a message for the room. By
