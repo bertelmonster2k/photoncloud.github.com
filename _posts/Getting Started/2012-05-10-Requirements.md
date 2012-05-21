@@ -1,13 +1,12 @@
 ---
 layout: article
 title: Loadbalancing Demo
-categories: [photon-server, getting-started]
+categories: [photon-server, getting_started]
 tags: [setup, installation]
 ---
 {% include globals %}
 
-Server Requirements
--------------------
+##Server Requirements
 
 ### Recommended Live Server
 
