@@ -28,8 +28,7 @@ options can be fully customized.
 <figcaption>Overview: The Photon Dashboard</figcaption>
 </figure>
 
-Photon's performance counters
------------------------------
+## Photon's performance counters
 
 ### In-Memory counters
 
