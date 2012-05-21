@@ -11,12 +11,7 @@ The SDK includes ready-to-use binaries which can be up and running within 5 minu
 
 The following video shows how this is done. Below that, the essential steps are also available to read.
 
-<object width="640" height="385">
-    <param name="movie" value="http://www.youtube.com/v/hu7D5oc0Ags?fs=1&amp;hl=en_GB&amp;rel=0"></param><param name="allowFullScreen" value="true"></param>
-    <param name="allowscriptaccess" value="always"></param>
-    
-    <embed src="http://www.youtube.com/v/hu7D5oc0Ags?fs=1&amp;hl=en_GB&amp;rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed>
-</object>
+
 
 
 ###Download
