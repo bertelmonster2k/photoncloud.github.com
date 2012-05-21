@@ -6,9 +6,6 @@ tags: [overview, quickstart, how-to, setup, installation]
 ---
 {% include globals %}
 
-First Steps
------------
-
 ### Getting an Account
 
 The Unity package "Photon Unity Networking" includes a setup wizard,
