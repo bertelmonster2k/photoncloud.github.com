@@ -39,23 +39,23 @@ The basic concepts we will build the application on are:
 We will start with a C\#/Windows/Console project and name it
 Helloworld1:
 
-![](../img/HelloWorld-NewProject.png)
 <figure>
+<img src="{{ IMG }}/HelloWorld-NewProject.png" />
 <figcaption>New Project</figcaption>
 </figure>
 
 We need to add a reference to PhotonDotNet.dll:
 
-![](../img/HelloWorld-AddReference.png)
 <figure>
+<img src="{{ IMG }}/HelloWorld-AddReference.png" />
 <figcaption>Add PhotonDotNet.dll reference</figcaption>
 </figure>
 
 Select the folder where you extracted the Photon-Dotnet SDK (tbd link to
 downloads) and browse to lib/debug where you will find PhotonDotNet.dll
 
-![](../img/HelloWorld-BrowseReference.png)
 <figure>
+<img src="{{ IMG }}/HelloWorld-BrowseReference.png" />
 <figcaption>Select Browse ...</figcaption>
 </figure>
 
@@ -77,8 +77,8 @@ Now we will implement the listener where we receive the PhotonPeer
 notifications. So the next step is adding the interface to the **Class
 Program**:
 
-![](../img/HelloWorld-AddInterface.png)
 <figure>
+<img src="{{ IMG }}/HelloWorld-AddInterface.png" />
 <figcaption>Add listener interface</figcaption>
 </figure>
 
@@ -154,19 +154,19 @@ following:
 
 ![](../img/HelloWorld-Output1.png) 
 <figure>
+<img src="{{ IMG }}/HelloWorld-Output1.png" />
 <figcaption>Console output</figcaption>
 </figure>
 
 That's it you are connected to the Photon Server in part 2 we will look
 on how to start using the connection to the Photon Server.
 
-Photon Server not found
------------------------
+## Photon Server not found
 
 If Photon Server is not running you will get a disconnect notification:
 
-![](../img/HelloWorld-Output2.png)
 <figure>
+<img src="{{ IMG }}/HelloWorld-Output2.png" />
 <figcaption>Console output</figcaption>
 </figure>
 
@@ -180,8 +180,8 @@ lib raises an exception.
 The normal behavior connecting to a remote server where photon is not
 running would a disconnect triggered after a timeout:
 
-![](../img/HelloWorld-Output3.png)
 <figure>
+<img src="{{ IMG }}/HelloWorld-Output3.png" />
 <figcaption>Console output</figcaption>
 </figure>
 
@@ -210,16 +210,15 @@ To see the host unknown behavior change your code as follows:
                 Console.WriteLine("Unknown hostname!");
 ~~~~
 
-![](../img/HelloWorld-Output4.png)
 <figure>
+<img src="{{ IMG }}/HelloWorld-Output4.png" />
 <figcaption>Console output</figcaption>
 </figure>
 
-Final Demo Code
----------------
+## Final Demo Code
 
 Hoover over the code section below an click on copy to clipboard
-![](../img/HelloWorld-Copyicon.png) and replace the contents of your
+<img src="{{ IMG }}/HelloWorld-Copyicon.png" /> and replace the contents of your
 Program.cs in your project.
 
 ~~~~ {.code}
