@@ -6,8 +6,7 @@ tags: [how-to, getting_started, setup, quickstart, installation]
 ---
 {% include globals %}
 
-Base Applications
------------------
+## Base Applications
 
 The Photon Server SDK includes several applications that should provide
 a good starting point for your own development. Below is described what
