@@ -6,8 +6,7 @@ tags: [how-to, setup, installation]
 ---
 {% include globals %}
 
-Photon Dashboard: Customizing
------------------------------
+## Photon Dashboard: Customizing
 
 In the previous part of the [Photon Dashboard
 tutorial](/dashboard), we have discussed how to install and
@@ -20,8 +19,7 @@ application](/WhatsInPhoton3), and want to add another counter -
 for example, imagine that you have a custom operation "SendMessage" and
 that you want to know how many messages are sent per second.
 
-Implementing custom performance counters
-----------------------------------------
+## Implementing custom performance counters
 
 At first, your application needs to track the desired values. We are
 going to use the in-memory counters from ExitGames.Diagnostics.Counter
@@ -30,8 +28,8 @@ for this purpose.
 Make sure that your application has a reference to the ExitGamesLibs.dll
 from the /lib folder:
 
-![](../img/DashboardCustomizing-Reference.png)
 <figure>
+<img src="{{ IMG }}/DashboardCustomizing-Reference.png" />
 <figcaption>Referencing the ExitGamesLibs.dll</figcaption>
 </figure>
 
@@ -140,8 +138,7 @@ firewall.
   
 ~~~~
 
-Understanding the Photon Dashboard
-----------------------------------
+## Understanding the Photon Dashboard
 
 In the previous steps we have made sure that our application tracks and
 publishes the required performance data. Now we need to make sure that
@@ -152,8 +149,8 @@ To extend the Photon Dashboard with your custom counters, it's helpful
 to understand roughly how the Dashboard is working internally. The
 following schema should give you a good idea.
 
-![](../img/DashboardCustomizing-Schema.png) 
 <figure>
+<img src="{{ IMG }}/DashboardCustomizing-Schema.png" />
 <figcaption>Components of the Photon Dashboard</figcaption>
 </figure>
 
@@ -174,8 +171,7 @@ The Photon Dashboard contains an internal HTTP server, so that you can
 easily access and browse the performance counter graphs on a web site,
 which can also be customized to your needs.
 
-Extending the Photon Dashboard
-------------------------------
+## Extending the Photon Dashboard
 
 ### Counter Receiver
 
@@ -265,8 +261,7 @@ If you want to customize the look of the Dashboard web UI, you can make
 changes to the html file or the .css stylesheets in
 /deploy/bin\_tools/dashboard/web.
 
-Appendix: List of Counters from ExitGames.Diagnostics.Counter
--------------------------------------------------------------
+## Appendix: List of Counters from ExitGames.Diagnostics.Counter
 
 This section discusses the available types of in-memory counters from
 the ExitGames.Diagnostics.Counter namespace in greater detail.
