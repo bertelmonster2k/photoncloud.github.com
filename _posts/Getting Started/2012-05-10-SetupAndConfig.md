@@ -6,8 +6,7 @@ tags: [how-to, setup, quickstart, installation]
 ---
 {% include globals %}
 
-Setup
------
+## Setup
 
 This chapter explains how files and folders are organized for the Photon
 Server and how things are setup. Everything needed is in the deploy
@@ -23,8 +22,8 @@ Per application, Photon requires a separate folder next to the
 binaries-folder (e.g. "Lite" in the deploy folder). The assemblies must
 be in a "bin" subfolder (e.g. Lite/bin).
 
-![](../img/Folder-Structure-Applications.jpg) 
 <figure>
+<img src="{{ IMG }}/Folder-Structure-Applications.jpg" />
 <figcaption>Folder Structure for Deploy</figcaption>
 </figure>
 
@@ -99,7 +98,7 @@ shadow copy will stay in it. New connects will use the new logic.
 
 To load multiple applications, simply add more Application nodes (with
 unique name). One of them can be made the default application by using
-it's name ("Lite" in the example). The default app is the fallback for
+its name ("Lite" in the example). The default app is the fallback for
 clients that try to connect to an unknown application.
 
 Applications that are not setup in the PhotonServer.config won't be
