@@ -7,7 +7,7 @@ tags: [how-to, setup, installation, lite]
 {% include globals %}
 
 The purpose of this tutorial is to give you an introduction to the
-client api and some of the basic concepts behind Photon. The tutorial is
+client API and some of the basic concepts behind Photon. The tutorial is
 divided in parts. We begin with a very simple demo which will be
 refactored to more usable code step by step while digging deeper into
 the different concepts of Photon.
@@ -152,7 +152,6 @@ notifications:
 Ok. We are done. Hit F5. If Photon Server is running you will see the
 following:
 
-![](../img/HelloWorld-Output1.png) 
 <figure>
 <img src="{{ IMG }}/HelloWorld-Output1.png" />
 <figcaption>Console output</figcaption>
