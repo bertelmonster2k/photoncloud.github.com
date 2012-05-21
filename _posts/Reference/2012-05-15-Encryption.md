@@ -6,9 +6,6 @@ tags: [setup, how-to, installation, sample]
 ---
 {% include globals %}
 
-Encryption
-----------
-
 Photon is able to encrypt messages between client and server - a
 must-have security-measure to send authentication input and other
 sensible user-data.
