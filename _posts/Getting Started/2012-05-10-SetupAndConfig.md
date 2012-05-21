@@ -2,7 +2,7 @@
 layout: article
 title: Setup and Config
 categories: [photon-server, getting_started]
-tags: [how-to, getting_started, setup, quickstart, installation]
+tags: [how-to, setup, quickstart, installation]
 ---
 {% include globals %}
 
@@ -23,8 +23,10 @@ Per application, Photon requires a separate folder next to the
 binaries-folder (e.g. "Lite" in the deploy folder). The assemblies must
 be in a "bin" subfolder (e.g. Lite/bin).
 
-![](../img/Folder-Structure-Applications.jpg) Folder Structure for
-Deploy
+![](../img/Folder-Structure-Applications.jpg) 
+<figure>
+<figcaption>Folder Structure for Deploy</figcaption>
+</figure>
 
 The following folders in the Server SDK deploy folder are applications:
 Lite, LiteLobby, MMO, CounterPublisher, Policy
@@ -80,7 +82,7 @@ be added.
 ~~~~
 
 Each application is assigned a name by which the clients reference it on
-connect (compare: [Photon Client Workflow](/photonclient/overview)).
+connect (compare: [Photon Client Workflow](/overview)).
 
 The "BaseDirectory" defines the folder in which an application resides.
 It does not name the "\\bin" folder but expects it by convention. The
@@ -186,7 +188,7 @@ AckSendingDelayMilliseconds represent a tradeoff between performance and
 minimal response times. This delay directly adds some lag to reduce the
 bandwidth usage: the wait allows the server to aggregate commands and
 send them in one package. The "send" delay is triggered when the server
-sends anything, the "ack" delay by incomging reliable data.
+sends anything, the "ack" delay by incoming reliable data.
 
 As you can see above, the default values are 50ms each. We found this to
 be a good value but it causes a \~50ms roundtrip time, even if client
