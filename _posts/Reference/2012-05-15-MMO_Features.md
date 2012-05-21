@@ -32,7 +32,7 @@ tags: [overview, quickstart, mmo]
 <img src="{{ IMG }}/mmo-feature1.png" />
 <figcaption>Inner and outer radius</figcaption>
 </figure>
-        -   invisible item, out of range
+    -   invisible item, out of range
         -   invisible item enters outer interest area
         -   invisible item enters inner interest area and becomes
             visible
