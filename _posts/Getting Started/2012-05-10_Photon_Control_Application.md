@@ -6,8 +6,7 @@ tags: [setup, installation]
 ---
 {% include globals %}
 
-Administration
---------------
+##Administration
 
 ### Photon Control
 
@@ -19,8 +18,8 @@ spots a Photon process running, it turns blue.
 You can setup PhotonControl to autorun on login, making it easier to
 spot Photon on any machine.
 
-![](../img/PhotonControl-EnableAutostart.jpg) 
 <figure>
+<img src="{{ IMG }}/PhotonControl-EnableAutostart.jpg" />
 <figcaption>Enable PhotonControl Autostart</figcaption>
 </figure>
 
