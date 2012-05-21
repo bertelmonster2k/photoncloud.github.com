@@ -81,7 +81,7 @@ The [Lite application](/WhatsInPhoton3) is making use of a
 be enabled / disabled, and it's port and IP can be configured in the
 /deploy/Lite/bin/Lite.dll.config:
 
-~~~~ {.code}
+~~~~~ {.code}
   
   <configSections>
     <section name="Photon" type="Photon.SocketServer.Diagnostics.Configuration.PhotonSettings, Photon.SocketServer"/>
@@ -93,7 +93,7 @@ be enabled / disabled, and it's port and IP can be configured in the
 
   </Photon>
   
-~~~~
+~~~~~
 
 This example is using a multicast IP - please note that you need to
 define specific IPs if Photon and Photon Dashboard are in different
