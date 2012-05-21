@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Calling Operations
-categories: [photon-server, photon-cloud, getting_started]
+categories: [photon-server, photon-cloud, references]
 tags: [overview, operations]
 ---
 {% include globals %}
