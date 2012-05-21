@@ -6,9 +6,9 @@ tags: [overview, quickstart, mmo]
 ---
 {% include globals %}
 
--   Nasasdn
-    - adasd
-    - asdmas
+-   Region-based interest management
+    - Square tile algorithm with variable width, height and tile size is implemented
+    - Easily replaceable with other region algorithms (hexagonal, etc. see [http://gram.cs.mcgill.ca/papers/boulanger-06-comparing.pdf](http://gram.cs.mcgill.ca/papers/boulanger-06-comparing.pdf))
 
 -   Items (Avatars, NPCs, shared game objects)
     -   Clients can spawn, destroy and move items.
