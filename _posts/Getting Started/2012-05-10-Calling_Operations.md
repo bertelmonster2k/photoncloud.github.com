@@ -6,8 +6,8 @@ tags: [overview, operations]
 ---
 {% include globals %}
 
-Operations in the LitePeer class
---------------------------------
+## Operations in the LitePeer class
+
 
 As described in the "Basics" section, Operations are Remote Procedure
 Calls, defined by some Photon Application.
