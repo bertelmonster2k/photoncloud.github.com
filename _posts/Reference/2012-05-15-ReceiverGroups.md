@@ -6,8 +6,6 @@ tags: [lite, lobby, how-to, overview]
 ---
 {% include globals %}
 
-Receiver Group
---------------
 
 Receiver groups are an alternative way to define who receives an event.
 It's an option available with Lite's operation RaiseEvent.
