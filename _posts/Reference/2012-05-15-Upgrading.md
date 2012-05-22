@@ -6,19 +6,23 @@ tags: [sample, how-to, setup, installation, lite]
 ---
 {% include globals %}
 
-Lite Project Upgrade Example
-----------------------------
+## Lite Project Upgrade Example
 
-*Upgrade your project from Lite 2.6 to 3.0* \
-\
+*Upgrade your project from Lite 2.6 to 3.0* 
 
 1.  Open the Lite 3.0 solution
 2.  Add your old project to the solution and update the references
-3.  Compile: ![](../img/UpgradeLobby1.png)\
-    \
+3.  Compile:
+<figure>
+<img src="{{ IMG }}/UpgradeLobby1.png" />
+</figure>
+    
 4.  Open class 'LiteLobbyApplication'
 
-    Old code: ![](../img/UpgradeLobby3.png)
+    Old code:
+<figure>
+<img src="{{ IMG }}/UpgradeLobby3.png" />
+</figure>
 
     New Code:
 
@@ -37,10 +41,13 @@ Lite Project Upgrade Example
     -   All peers have to inherit from PeerBase.
     -   IPeer and PhotonPeer have been removed.
 
-    \
+    
 
-5.  Open class 'LiteLobbyPeer':![](../img/UpgradeLobby4.png)\
-    \
+5.  Open class 'LiteLobbyPeer':
+<figure>
+<img src="{{ IMG }}/UpgradeLobby4.png" />
+</figure>
+
 
     Problems:
 
@@ -51,7 +58,6 @@ Lite Project Upgrade Example
         SendOperationResponse
     -   The OperationRequest constructor has changed
 
-    \
 
     Solution Steps:
 
@@ -68,9 +74,12 @@ Lite Project Upgrade Example
     -   Remove the OperationRequestDispatcher field.
     -   Remove the OperationRequestDispatcher class.
 
-    \
 
-    Old code: ![](../img/UpgradeLobby5.png)
+    Old code:
+<figure>
+<img src="{{ IMG }}/UpgradeLobby5.png" />
+</figure>
+
 
     New code:
 
@@ -116,9 +125,11 @@ Lite Project Upgrade Example
     -   Send parameters like reliability, channelId, etc moved from
         OperationRequest/Response to the new struct SendParameters.
 
-    \
 
     Old code: ![](../img/UpgradeLobby6.png)
+<figure>
+<img src="{{ IMG }}/UpgradeLobby6.png" />
+</figure>
 
     New code:
 
@@ -146,9 +157,11 @@ Lite Project Upgrade Example
 
     -   LitePeer.State has been renamed to 'RoomReference'.
 
-    \
 
-    Old code: ![](../img/UpgradeLobby7.png)
+    Old code:
+<figure>
+<img src="{{ IMG }}/UpgradeLobby7.png" />
+</figure>
 
     New code:
 
@@ -175,7 +188,10 @@ Lite Project Upgrade Example
 
 6.  Open class LiteLobby.Operations.JoinOperation:
 
-    Old code: ![](../img/UpgradeLobby2.png)
+    Old code:
+<figure>
+<img src="{{ IMG }}/UpgradeLobby2.png" />
+</figure>
 
     New code:
 
@@ -207,11 +223,13 @@ Lite Project Upgrade Example
         and one for outgoing messages. Requests need to use the one for
         incoming messages.
 
-    \
 
 7.  Open class 'LiteLobbyGame'
 
-    Old code: ![](../img/UpgradeLobby8.png)
+    Old code:
+ <figure>
+<img src="{{ IMG }}/UpgradeLobby8.png" />
+</figure>
 
     New code:
 
@@ -231,11 +249,13 @@ Lite Project Upgrade Example
 
     -   HandeJoinOperation signature has changed
 
-    \
 
 8.  Open class 'LiteLobbyRoom'
 
     Old code: ![](../img/UpgradeLobby9.png)
+  <figure>
+<img src="{{ IMG }}/UpgradeLobby9.png" />
+</figure>
 
     New code:
 
@@ -279,9 +299,11 @@ Lite Project Upgrade Example
     -   ValidateOperation requires the used send parameters for a
         potential error response
 
-    \
 
-    Old code: ![](../img/UpgradeLobby10.png)
+    Old code:
+<figure>
+<img src="{{ IMG }}/UpgradeLobby10.png" />
+</figure>
 
     New code:
 
@@ -301,9 +323,11 @@ Lite Project Upgrade Example
 
     -   HandleJoinOperation requires the SendParameters
 
-    \
 
-    Old code: ![](../img/UpgradeLobby11.png)
+    Old code:
+<figure>
+<img src="{{ IMG }}/UpgradeLobby11.png" />
+</figure>
 
     New code:
 
@@ -317,9 +341,11 @@ Lite Project Upgrade Example
 
     -   Lite.Operations.JoinOperation has been renamed to 'JoinRequest'
 
-    \
 
-    Old code: ![](../img/UpgradeLobby12.png)
+    Old code:
+<figure>
+<img src="{{ IMG }}/UpgradeLobby12.png" />
+</figure>
 
     New code:
 
@@ -334,9 +360,11 @@ Lite Project Upgrade Example
     -   Lite.Operations.LeaveOperation has been renamed to
         'LeaveRequest'
 
-    \
 
-    Old code: ![](../img/UpgradeLobby13.png)
+    Old code:
+<figure>
+<img src="{{ IMG }}/UpgradeLobby13.png" />
+</figure>
 
     New code:
 
@@ -348,9 +376,11 @@ Lite Project Upgrade Example
 
     -   LitePeer.Sessionid has been replaced with PeerBase.ConnectionId.
 
-    \
 
-    Old code: ![](../img/UpgradeLobby14.png)
+    Old code:
+<figure>
+<img src="{{ IMG }}/UpgradeLobby14.png" />
+</figure>
 
     New code:
 
@@ -366,9 +396,11 @@ Lite Project Upgrade Example
     -   The flags for reliability, flush, etc moved to struct
         SendParameters
 
-    \
 
-    Old code: ![](../img/UpgradeLobby15.png)
+    Old code:
+<figure>
+<img src="{{ IMG }}/UpgradeLobby15.png" />
+</figure>
 
     New code:
 
