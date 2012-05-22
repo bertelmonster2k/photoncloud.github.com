@@ -126,7 +126,7 @@ tags: [sample, how-to, setup, installation, lite]
         OperationRequest/Response to the new struct SendParameters.
 
 
-    Old code: ![](../img/UpgradeLobby6.png)
+    Old code:
 <figure>
 <img src="{{ IMG }}/UpgradeLobby6.png" />
 </figure>
