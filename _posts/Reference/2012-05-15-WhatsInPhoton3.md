@@ -6,8 +6,6 @@ tags: [overview, quickstart]
 ---
 {% include globals %}
 
-Photon 3.0: What's in?
-----------------------
 
 ### New
 
@@ -109,7 +107,7 @@ Photon 3.0: What's in?
     -   The Params property of classes EventData, OperationRequest and
         OperatioResponse has been substituted wth the new property
         'Parameters'. This dictionary's keys are now of type byte.
-    -   The property EventData.EventCode has been renamed to 'Code' ant
+    -   The property EventData.EventCode has been renamed to 'Code' and
         its type was changed to byte.
     -   The type of the properties OperationRequest.OperationCode and
         OperationResponse.OperationCode has been changed to byte.
