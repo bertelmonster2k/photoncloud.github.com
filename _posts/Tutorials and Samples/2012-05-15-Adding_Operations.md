@@ -6,8 +6,6 @@ tags: [lite, sample, how-to]
 ---
 {% include globals %}
 
-Adding new Operations
----------------------
 
 In many cases, just sending events is not enough for a game. If you want
 to provide authorization, persistency or game-specific Operations, it's
