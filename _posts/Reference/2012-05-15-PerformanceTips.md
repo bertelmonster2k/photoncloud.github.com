@@ -6,8 +6,6 @@ tags: [setup, how-to, overview]
 ---
 {% include globals %}
 
-Perfomance Tips
----------------
 
 ### Call Service regularly
 
@@ -59,4 +57,4 @@ when completed.
 Bigger data "streams" can considerably affect latency as they need to be
 reassembled from many packages before they are dispatched. They can be
 sent in a separate channel, so they don't affect the "throw away"
-position updates of a (lower) channel numnber.
+position updates of a (lower) channel number.
