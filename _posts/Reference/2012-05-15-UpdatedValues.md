@@ -7,9 +7,7 @@ tags: [overview, how-to]
 {% include globals %}
 
 
-Updated:\
-Event-, Operation- and Parameter-Codes
---------------------------------------
+## Updated: Event-, Operation- and Parameter-Codes
 
 In Photon 2.x, our demo applications Lite and Lite Lobby used just about
 any (more or less random) value for event-, operation- and
