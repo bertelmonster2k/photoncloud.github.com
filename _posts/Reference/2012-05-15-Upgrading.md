@@ -10,14 +10,14 @@ tags: [sample, how-to, setup, installation, lite]
 
 *Upgrade your project from Lite 2.6 to 3.0* 
 
-1.Open the Lite 3.0 solution
-2.Add your old project to the solution and update the references
-3.Compile:
+1.  Open the Lite 3.0 solution
+2.  Add your old project to the solution and update the references
+3.  Compile:
 <figure>
 <img src="{{ IMG }}/UpgradeLobby1.png" />
 </figure>
     
-4.Open class 'LiteLobbyApplication'
+4.  Open class 'LiteLobbyApplication'
 
     Old code:
 <figure>
