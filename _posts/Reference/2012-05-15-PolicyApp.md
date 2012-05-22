@@ -6,8 +6,6 @@ tags: [setup, how-to, installation]
 ---
 {% include globals %}
 
-Policy Application
-------------------
 
 The Policy Application runs on Photon to send the crossdomain.xml.
 Webplayer platforms like Unity Webplayer, Flash and Silverlight request
