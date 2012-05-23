@@ -12,19 +12,21 @@ Currently you are in the <strong>Photon Cloud</strong> area.
 
 If you are looking for the <strong>Photon Server</strong> documentation, please go over [here] (doc.exitgames.com/photon-server).
 
-This documentation is split into the following 3 topics, clicking on one of these images will directly redirect you there. If you are completely new to the world of Photon scroll down to the comparison chart below. It will help you to understand the differences and what Photon product better suits your needs.
+If you are completely new to the world of Photon scroll down to the comparison chart below. It will help you to understand the differences and what Photon product better suits your needs.
+
+This documentation is split into the following 3 topics, clicking on one of these images will directly redirect you there. 
 
 TBD IMAGES
 
 
 ## Overview
 
-<strong>Photon Cloud</strong> is a fully managed service run by the experts of Exit
+The <strong>Photon Cloud</strong> is a fully managed service run by the experts of Exit
 Games. You can completely concentrate on your application client while
 hosting, server operations and scaling is all taken care of in the
 Photon Cloud.
 
-<strong>Photon Server</strong> is a server application that you can run and host on 
+The <strong>Photon Server</strong> is a server application that you can run and host on 
 machines of your choice. Fully customizable and the authorative control 
 gives you the freedom to configure and set up your own infrastructure 
 for multiplayer enabled applications.
