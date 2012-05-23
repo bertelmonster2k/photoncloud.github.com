@@ -6,11 +6,8 @@ tags: [sample, how-to, unity, demo]
 ---
 {% include globals %}
 
-Bootcamp Multiplayer Demo
-=========================
 
-Shot Sync (shot rotation and target finding)
---------------------------------------------
+## Shot Sync (shot rotation and target finding)
 
 Firing Synchronization was accomplished by taking the player’s rotation
 while aiming, the target’s position as set in playerLocal, the weapon’s

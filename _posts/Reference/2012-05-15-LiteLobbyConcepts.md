@@ -6,9 +6,6 @@ tags: [overview, lite, lobby, how-to]
 ---
 {% include globals %}
 
-Lite Lobby Concepts
--------------------
-
 LiteLobby is an application that (literally) extends the Lite
 application to offer a listing of currently used rooms. To achieve this,
 it implements two different types of rooms: the LiteLobbyRoom and a

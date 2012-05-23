@@ -7,8 +7,7 @@ tags: [sample, how-to, unity]
 {% include globals %}
 
 
-Converting your Unity networking project to Photon
---------------------------------------------------
+## Converting your Unity networking project to Photon
 
 Converting your Unity networking project to Photon can be done in one
 day. Just to be sure, make a backup of your project, as our automated
@@ -31,7 +30,10 @@ fix a few script conversion bugs. After conversion, you will most likely
 see some compile errors. You'll have to fix these first. Most common
 compile errors:
 
-![](images/CompileErrors.PNG)
+<figure>
+<img src="{{ IMG }}/CompileErrors.PNG" />
+</figure>
+
 
 You should be able to fix all compile errors in 5-30 minutes. Most
 errors will originate from main menu/GUI code, related to

@@ -6,8 +6,6 @@ tags: [sample, lite, lobby, operations, overview]
 ---
 {% include globals %}
 
-Lite Application Concepts
--------------------------
 
 ### Peers
 

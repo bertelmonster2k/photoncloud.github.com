@@ -6,10 +6,11 @@ tags: [sample, how-to, unity, demo]
 ---
 {% include globals %}
 
-Bootcamp Multiplayer Demo
-=========================
 
-![](../img/Demo-BootcampMultiplayer.png) Bootcamp Multiplayer Demo
+<figure>
+<img src="{{ IMG }}/Demo-BootcampMultiplayer.png" />
+<figcaption>Bootcamp Multiplayer Demo</figcaption>
+</figure>
 
 The Demo is available for download at the **[Unity Asset
 Store](http://u3d.as/content/exit-games/photon-bootcamp-demo/1AA)**.
@@ -21,8 +22,7 @@ Thanks for coding the demo and for writing this tutorial to:\
  T. + 52 818 340 4826\
  [www.kingsmound.com](http://www.kingsmound.com)
 
-Objective
----------
+## Objective
 
 Describing the actions needed to add multiplayer functionality to the
 Bootcamp Demo with Exit Games Photon.

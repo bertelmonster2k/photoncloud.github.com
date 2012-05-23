@@ -6,8 +6,7 @@ tags: [lite, lobby, sample, how-to]
 ---
 {% include globals %}
 
-Chatroom and Lobby Demo
------------------------
+## Chatroom and Lobby Demo
 
 This demo shows some of the things you can do with Photon's "Lite Lobby"
 application, purely from the client side. No server programming is
@@ -25,13 +24,16 @@ whenever connection is lost), it will display an error message.
 
 You will be asked to enter a name and "Proceed to Lobby". A short text
 explains "debug mode" keys to control multiple clients. This will come
-in handy in a minute. Enter the lobby. As noone else is on your server,
+in handy in a minute. Enter the lobby. As no one else is on your server,
 you should create a room. Enter a name and click "Enter". The next
 screen is a simple chat: Messages are entered at the bottom, users
 listed on the right side and there is a button to leave. Now, more users
 would be nice.
 
-![](../img/Demo-LiteLobbyChat-EmptyChat.jpg) Almost empty chat
+<figure>
+<img src="{{ IMG }}/LiteLobbyChat-EmptyChat.jpg" />
+<figcaption>Almost empty chat</figcaption>
+</figure>
 
 Of course, you could start the demo several times to get more people in
 the chat. To make things easier, you can instantiate a chat client by
@@ -66,8 +68,10 @@ each client's state, name, room and control if we want it's debug out in
 the console. This setup makes things transparent and we might even save
 a few debugging sessions.
 
-![](../img/Demo-LiteLobbyChat-ScriptsInEditor.jpg) Script values at
-runtime
+<figure>
+<img src="{{ IMG }}/Demo-LiteLobbyChat-ScriptsInEditor.jpg" />
+<figcaption>Script values at runtime</figcaption>
+</figure>
 
 Missing in the client library is a special peer class for LiteLobby,
 which is more or less treated like any game you would develop. To fill
@@ -83,7 +87,7 @@ parameter to chose. The secret is, that Lite Lobby creates a lobby when
 the roomname to join ends on "\_lobby" and a game room in any other
 case. An optional parameter can be used to tell a game room to update a
 certain lobby. Read about the server side on page: [Lite Lobby
-Concepts](/liteandlitelobbyaddon/litelobbyconcepts).
+Concepts](/litelobbyconcepts).
 
 The additional features of Lite Lobby are currently not implemented by
 the client library. This where our LiteLobbyPeer class comes to use. It

@@ -6,22 +6,20 @@ tags: [overview, quickstart]
 ---
 {% include globals %}
 
-Photon 3.0: What's in?
-----------------------
 
 ### New
-
-1.  **High Performance S2S Api (native/c++)**
-
-    A while back we introduced the TCPClient a managed class better
-    suited for server to server communication than the standard client
-    library. The TCPClient had two disadvantages: first the programming
-    model on both ends of the connection was different (TCPClient on one
-    side, Peer on the other), second it was designed for low-bandwidth
-    communication. With this release photon can setup a connection to
-    other photon instances leveraging the networking power of the photon
-    core while allowing to use the same programming model using peers on
-    both ends of the connection.
+<p>
+<strong> 1. High Performance S2S Api (native/c++)</strong><br>
+A while back we introduced the TCPClient a managed class better
+suited for server to server communication than the standard client
+library. The TCPClient had two disadvantages: first the programming
+model on both ends of the connection was different (TCPClient on one
+side, Peer on the other), second it was designed for low-bandwidth
+communication. With this release photon can setup a connection to
+other photon instances leveraging the networking power of the photon
+core while allowing to use the same programming model using peers on
+both ends of the connection. 
+</p>
 
 2.  **Load Balancing**
 
@@ -109,7 +107,7 @@ Photon 3.0: What's in?
     -   The Params property of classes EventData, OperationRequest and
         OperatioResponse has been substituted wth the new property
         'Parameters'. This dictionary's keys are now of type byte.
-    -   The property EventData.EventCode has been renamed to 'Code' ant
+    -   The property EventData.EventCode has been renamed to 'Code' and
         its type was changed to byte.
     -   The type of the properties OperationRequest.OperationCode and
         OperationResponse.OperationCode has been changed to byte.

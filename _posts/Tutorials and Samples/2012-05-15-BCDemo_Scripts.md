@@ -6,12 +6,6 @@ tags: [sample, how-to, unity, demo]
 ---
 {% include globals %}
 
-Bootcamp Multiplayer Demo
-=========================
-
-Scripts
--------
-
 ### Enums.cs
 
 This script contains an enumeration KeyState that contains all possible
@@ -106,13 +100,12 @@ accessed via this particular reference.
 PlayerLocal.cs: This script is responsible for sending all fire,
 position and rotation events as well as animation KeyStates such as
 Crouch or Aim. The events are routed to their remote counter-part using
-the player id and calling PlayerRemote.cs to sync each remote player’s
+the player ID and calling PlayerRemote.cs to sync each remote player’s
 state.
 
 PlayerRemote.cs: This script receives the event and property change
 messages that are sent by its local counter-part (PlayerLocal.cs).
 
-\
 
 ### Game.cs
 
@@ -322,7 +315,7 @@ public virtual short OpSetPropertiesOfActor(int actorNr, Hashtable properties, b
       return OpCustom((byte)LiteOpCode.SetProperties, wrap, true, channelId);
 }
 
-/// The LiteEventCode SetProperties is received by EventAction and sent to playerRemote.cs with the id corresponding to the player that originated the message.
+/// The LiteEventCode SetProperties is received by EventAction and sent to playerRemote.cs with the ID corresponding to the player that originated the message.
 public void EventAction(byte eventCode, Hashtable photonEvent)
 {
    if (eventCode != Constants.EV_MOVE)

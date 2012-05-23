@@ -6,11 +6,6 @@ tags: [sample, how-to, unity, demo]
 ---
 {% include globals %}
 
-Bootcamp Multiplayer Demo
-=========================
-
-Prediction
-----------
 
 Events arrive delayed because of network latency and maybe also because
 of processing delays due to low frame rate or high server load. To

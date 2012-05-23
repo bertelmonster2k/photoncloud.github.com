@@ -6,11 +6,6 @@ tags: [sample, how-to, unity, demo]
 ---
 {% include globals %}
 
-Bootcamp Multiplayer Demo
-=========================
-
-Frags and Respawns
-------------------
 
 When a PlayerLocal shoots at a remote player, the information is
 received by SoldierDamageControl in the graphical representation of the
@@ -34,7 +29,7 @@ OR
     
 ~~~~
 
-with the id of the playerLocal that has the same ID. The playerLocal
+with the ID of the playerLocal that has the same ID. The playerLocal
 that has the same ID receives the information and decreases his/her
 health depending on the weapon dealing damage.
 

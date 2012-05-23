@@ -6,15 +6,9 @@ tags: [overview, quickstart, mmo]
 ---
 {% include globals %}
 
-MMO Features
-------------
-
 -   Region-based interest management
-    -   Square tile algorithm with variable width, height and tile size
-        is implemented.
-    -   Easily replaceable with other region algorithms (hexagonal, etc
-        – see
-        [http://gram.cs.mcgill.ca/papers/boulanger-06-comparing.pdf](http://gram.cs.mcgill.ca/papers/boulanger-06-comparing.pdf))
+    - Square tile algorithm with variable width, height and tile size is implemented
+    - Easily replaceable with other region algorithms (hexagonal, etc. see [http://gram.cs.mcgill.ca/papers/boulanger-06-comparing.pdf](http://gram.cs.mcgill.ca/papers/boulanger-06-comparing.pdf))
 
 -   Items (Avatars, NPCs, shared game objects)
     -   Clients can spawn, destroy and move items.
@@ -29,9 +23,13 @@ MMO Features
     -   Interest areas have two interest thresholds. Items that enter
         the inner radius become visible; items that leave the outer
         become invisible. This optimization reduces frequent visibility
-        changes. \
-        ![](../img/mmo-feature1.png)Inner and outer radius
-        -   invisible item, out of range
+        changes. 
+     
+<figure>
+<img src="{{ IMG }}/mmo-feature1.png" />
+<figcaption>Inner and outer radius</figcaption>
+</figure>
+    -   invisible item, out of range
         -   invisible item enters outer interest area
         -   invisible item enters inner interest area and becomes
             visible

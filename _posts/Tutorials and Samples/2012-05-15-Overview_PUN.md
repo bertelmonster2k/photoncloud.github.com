@@ -97,7 +97,7 @@ item, the use is explained (check the tooltip when you type in e.g.
 PhotonNetworkingMessage. OnConnectedToPhoton. You can add these methods
 on any number of MonoBehaviours, they will be called in the respective
 situation. The complete list of callbacks is also in the [Plugin
-reference](#_PluginReference).
+reference](Link tbd).
 
 This covers the basics of setting up game rooms. Next up is actual
 communication in games.
@@ -130,7 +130,9 @@ send messages and optionally instantiate/allocate other PhotonViews.
 To add a PhotonView to a gameobject, simply select a gameobject and use:
 "Components/Miscellaneous/Photon View".
 
-![](../img/PhotonView.PNG)
+<figure>
+<img src="{{ IMG }}/PhotonView.PNG" />
+</figure>
 
 #### Observe Transform
 

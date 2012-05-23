@@ -6,8 +6,7 @@ tags: [lite, lobby, how-to, overview]
 ---
 {% include globals %}
 
-Overview
---------
+## Overview
 
 Usually, the operation RaiseEvent sends your event to anyone else,
 currently in the same room. Cached events are ... cached ... and will be
@@ -28,8 +27,7 @@ Cached events are a feature of the Lite and Lite Lobby applications of
 Photon 3. They are not supported by the MMO application or if you start
 from scratch.
 
-Cache control
--------------
+## Cache control
 
 Events are cached per actor and per event-code. This way, every player
 can send event "MyProfile" (a.k.a. (byte)0) and set some values.
@@ -44,8 +42,7 @@ Photon 3 allows you to send Null as value in Hashtables (and several
 other places), so to get rid of a key in a cached event: Send the same
 event, assign null to the key you want deleted and merge the event.
 
-Ordered delivery
-----------------
+## Ordered delivery
 
 Cached events are sent to players when they join, which means they make
 up the fist few events they get inside a room.
