@@ -24,16 +24,19 @@ This documentation is split into the following 3 topics, clicking on one of the 
 
 
 ## Overview
-
-&nbsp;<strong>Photon Cloud</strong> is a fully managed service run by the experts of Exit
+<p>
+<strong>Photon Cloud</strong> is a fully managed service run by the experts of Exit
 Games. You can completely concentrate on your application client while
 hosting, server operations and scaling is all taken care of in the
 Photon Cloud.
+</p>
 
+<p>
 <strong>Photon Server</strong> is a server application that you can run and host on 
 machines of your choice. Fully customizable and the authorative control 
 gives you the freedom to configure and set up your own infrastructure 
 for multiplayer enabled applications.
+</p>
 
 ## Cloud versus Self-Hosting
 
