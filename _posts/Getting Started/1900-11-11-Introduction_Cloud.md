@@ -46,7 +46,7 @@ for multiplayer enabled applications.
 <thead>
     <tr>
         <th>Photon Cloud</th>
-        <th>Own Photon Host</th>
+        <th>Photon Server</th>
     </tr>
 </thead>
 
