@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Photon Control 
+title: Photon Control Application
 categories: [photon-server, getting_started]
 tags: [setup, installation]
 ---
