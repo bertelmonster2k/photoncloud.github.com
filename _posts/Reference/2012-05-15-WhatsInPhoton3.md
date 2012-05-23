@@ -9,7 +9,7 @@ tags: [overview, quickstart]
 
 ### New
 <p>
-<strong> 1. High Performance S2S Api (native/c++)</strong></br>
+<strong> 1. High Performance S2S Api (native/c++)</strong><br>
 A while back we introduced the TCPClient a managed class better
 suited for server to server communication than the standard client
 library. The TCPClient had two disadvantages: first the programming
