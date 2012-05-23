@@ -17,9 +17,9 @@ If you are completely new to the world of Photon scroll down to the comparison c
 This documentation is split into the following 3 topics, clicking on one of the following images will directly redirect you there. 
 
 <div class="aC">
-<a href="url" class="button server mR">Getting Started</a> 
-<a href="url" class="button server mR">Tutorials and Demos</a> 
-<a href="url" class="button server mR">References</a> 
+<a href="url" class="button cloud mR">Getting Started</a> 
+<a href="url" class="button cloud mR">Tutorials and Demos</a> 
+<a href="url" class="button cloud mR">References</a> 
 </div>
 
 
