@@ -5,8 +5,6 @@ categories: [photon-cloud, getting_started]
 tags: [comparison, quickstart]
 ---
 {% include globals %}
-
-## Introduction
 Welcome to the Photon documentation pages!
 This documentation is seperated into two areas, one for each of our products in the Photon product line.
 
