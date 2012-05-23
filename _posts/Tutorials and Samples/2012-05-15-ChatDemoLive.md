@@ -1,13 +1,10 @@
 ---
 layout: article
-title: Chat Demo Live
+title: Lite Lobby Chat Demo
 categories: [photon-server, tutorials]
 tags: [unity, lite, lobby, demo]
 ---
 {% include globals %}
-
-Lite Lobby Chat Demo
---------------------
 
 This is a live version of the Lite Lobby Chat Demo from the Unity Client
 SDK (v6.2.0 and up).
