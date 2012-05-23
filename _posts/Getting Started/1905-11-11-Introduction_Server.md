@@ -76,7 +76,7 @@ Photon Cloud.
             <b>Licensing.</b>
             Choose what fits you best: ongoing subscriptions or pre-paid options.
             You get cloud hosting and rent Photon in one package.<br />
-            <a href="http://cloud.exitgames.com/">Get signed up while the service is still for free here!</a></td>
+            <a href="http://cloud.exitgames.com/">Get your free trial here!</a></td>
         <td>
             Licenses are bought through the shop and provided as download.
             Cheaper licenses limit the number of concurrent users per server.
