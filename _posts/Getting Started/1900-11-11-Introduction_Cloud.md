@@ -14,7 +14,7 @@ If you are looking for the <strong>Photon Server</strong> documentation, please 
 
 If you are completely new to the world of Photon scroll down to the comparison chart below. It will help you to understand the differences and what Photon product better suits your needs.
 
-This documentation is split into the following 3 topics, clicking on one of these images will directly redirect you there. 
+This documentation is split into the following 3 topics, clicking on one of the following images will directly redirect you there. 
 
 TBD IMAGES
 
