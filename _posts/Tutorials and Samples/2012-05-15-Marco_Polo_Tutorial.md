@@ -6,8 +6,7 @@ tags: [unity, how-to, sample, demo]
 ---
 {% include globals %}
 
-Contents
-========
+## Contents
 
 [Overview.. 1](#_Toc317517583)
 
@@ -29,8 +28,7 @@ Contents
 
 [Conclusion. 15](#_Toc317517612)
 
-Overview
-========
+## Overview
 
 The first part of this tutorial is a walkthrough to one of the Photon
 Unity Networking (short: PUN) demos. You will get the PUN package into
@@ -45,13 +43,14 @@ This tutorial assumes you know the basics of using the Unity Editor and
 programming. The sample code is written in C\# but works similarly in
 Unity Script.
 
-Walking Vikings
-===============
+## Walking Vikings
 
 Let’s first try the “Viking Demo”, one of the Photon Unity Networking
 samples from the Asset Store.
 
-![](../img/tutorial-marcopolo/image001.png)
+<figure>
+<img src="{{ IMG }}/image001.png" />
+</figure>
 
 Everything needed, is in the package, so we create a new, empty project
 in Unity. In the Asset Store, search for “[Photon Viking
@@ -62,7 +61,9 @@ This adds two folders to our project: “DemoVikings” and “Photon Unity
 Networking”. The PUN directory wraps up all the networking code you
 would need in a project. The “Vikings” folder contains the sample.
 
-![](../img/tutorial-marcopolo/image002.png)
+<figure>
+<img src="{{ IMG }}/image002.png" />
+</figure>
 
 Importing the package also opens a “PUN Setup Wizard” window in the
 Editor.
@@ -78,7 +79,10 @@ our game. We will explain in a bit.
 
 Cloud registration
 
-![](../img/tutorial-marcopolo/image003.png)Using the Cloud for a trial
+<figure>
+<img src="{{ IMG }}/image003.png" />
+</figure>
+Using the Cloud for a trial
 is free and without obligation, so for now, we just enter our mail
 address and the Wizard does its magic:
 
@@ -110,17 +114,20 @@ plural).
 We can start a few more, running around with each. The camera always
 follows our “own” Viking per client.
 
-![](../img/tutorial-marcopolo/image004.png)
+<figure>
+<img src="{{ IMG }}/image004.png" />
+</figure>
 
 This already concludes the first part of this tutorial. You learned how
 to get the PUN package, import and set it up. Not surprising but also
 important: You learned that you will need to run multiple clients to
 test your game.
 
-Photon Cloud
-============
+## Photon Cloud
 
-![](../img/tutorial-marcopolo/image005.png)
+<figure>
+<img src="{{ IMG }}/image005.png" />
+</figure>
 
 So, what exactly does this “Photon Cloud” do?!
 
@@ -175,8 +182,7 @@ their client.
 There is also a “game version” you can use to separate players with
 older clients from those with newer ones.
 
-Starting From Scratch
-=====================
+## Starting From Scratch
 
 Let’s start something new. For the sake of a simple tutorial, we will
 not create the next MMO but a Marco Polo game – with Monsters. This
@@ -186,8 +192,7 @@ Start over by creating a new, empty project. This time, during import,
 we uncheck the “DemoVikings” folder. Enter your app ID in the wizard and
 save.
 
-Reception: Getting a Room
-=========================
+## Reception: Getting a Room
 
 Before we do anything else, we need to get our players into a room. In a
 room, we can move around and let others watch it.
@@ -208,7 +213,9 @@ If started this would get us connected and into the lobby. However, we
 would not notice any of that. Let’s show some state! With a minimum of
 gui, the code looks like this:
 
-![](../img/tutorial-marcopolo/image006.png)
+<figure>
+<img src="{{ IMG }}/image006.png" />
+</figure>
 
 The script is not yet in the scene. We create a new, empty GameObject
 and name it “Scripts”. This makes it easier to find the scripts later on
@@ -238,7 +245,9 @@ For the time being, we ignore the list of Rooms we now got and instead
 try to get into a room quickly. The PhotonNetwork class has a
 JoinRandomRoom() method. This tries to get us into any room. Let’s try.
 
-![](../img/tutorial-marcopolo/image007.png)
+<figure>
+<img src="{{ IMG }}/image007.png" />
+</figure>
 
 Obviously, JoinRandomRoom() does not really work for some reason. The
 current code stays in the Lobby.
@@ -270,13 +279,14 @@ tooltip explains that there are two overloads and if we pass null as
 room name it will become a GUID. As we don’t show room names yet, we
 don’t care and pass null.
 
-![](../img/tutorial-marcopolo/image008.png)
+<figure>
+<img src="{{ IMG }}/image008.png" />
+</figure>
 
 Try out this code by running it. The detailed state is changing more
 often than before and ends on “Joined”. We’re in some room!
 
-Marco Polo: Syncing Positions
-=============================
+## Marco Polo: Syncing Positions
 
 We’ve seen the Vikings running around, so let’s try to do the same.
 First, get a [“Monster” character from the Asset
@@ -304,7 +314,9 @@ To setup the new PhotonView to observe the translation of its
 “monsterprefab”, drag & drop the translation to the “observed” field. We
 don’t need to change the other settings of the PhotonView.
 
-![](../img/tutorial-marcopolo/image009.png)
+<figure>
+<img src="{{ IMG }}/image009.png" />
+</figure>
 
 ### Adding Monsters
 
@@ -314,7 +326,9 @@ the view gets instantiated on the other clients, too.
 
 In OnJoinedRoom(), we call Instantiate() like so:
 
-![](../img/tutorial-marcopolo/image010.png)
+<figure>
+<img src="{{ IMG }}/image010.png" />
+</figure>
 
 Running this will show a monster pop up and start falling. Poor monster.
 Let’s create some ground.
@@ -332,7 +346,9 @@ and import it. The “Pavement\_01” looks nice, so we open its folder and
 apply the material to the plane. In the inspector, change the texture
 tiling from 1 to 10 for x and y.
 
-![](../img/tutorial-marcopolo/image011.png)
+<figure>
+<img src="{{ IMG }}/image011.png" />
+</figure>
 
 ### Fight for Control
 
@@ -353,7 +369,9 @@ this folder and move the script over (drag & drop in the editor).
 After instantiating our monster, we can grab its myThirdPersonController
 component and activate it.
 
-![](../img/tutorial-marcopolo/image012.png)
+<figure>
+<img src="{{ IMG }}/image012.png" />
+</figure>
 
 ### Smooth Moves
 
@@ -375,7 +393,9 @@ isWriting tells us if we need to write or read remote data from it.
 First, we send and receive Position and Rotation. This has the same
 effect as the PhotonView without script:
 
-![](../img/tutorial-marcopolo/image013.png)
+<figure>
+<img src="{{ IMG }}/image013.png" />
+</figure>
 
 A simple way to smoothly “push” a monster to its correct position is to
 Lerp it there over time.
@@ -384,7 +404,9 @@ We add Vector3 correctPlayerPos and Quaternion correctPlayerRot to the
 NetworkCharacter. In OnPhotonSerializeView we store the new values and
 apply them (bit by bit) in Update().
 
-![](../img/tutorial-marcopolo/image014.png)
+<figure>
+<img src="{{ IMG }}/image014.png" />
+</figure>
 
 Monsters of other players won’t be using the exact same speed this way
 but they will reach the same point in a short time. For some games it
@@ -417,15 +439,21 @@ not true.
 
 We read input axes only if controllable:
 
-![](../img/tutorial-marcopolo/image015.png)
+<figure>
+<img src="{{ IMG }}/image015.png" />
+</figure>
 
 We suppress “firing” unless isControllable:
 
-![](../img/tutorial-marcopolo/image016.png)
+<figure>
+<img src="{{ IMG }}/image016.png" />
+</figure>
 
 And no one is jumping, unless controlled:
 
-![](../img/tutorial-marcopolo/image017.png)
+<figure>
+<img src="{{ IMG }}/image017.png" />
+</figure>
 
 Note: The original script was resetting Input at the beginning of
 Update(). That’s gone. We have multiple scripts running and we don’t
@@ -439,7 +467,9 @@ Then we detect and set the idle state which would otherwise never be
 synced. In the code block below, add a “if idle state” and apply the
 animation accordingly:
 
-![](../img/tutorial-marcopolo/image018.png)
+<figure>
+<img src="{{ IMG }}/image016.png" />
+</figure>
 
 While the original script modifies the animation speed by velocity, we
 can’t do that for other payers’ monsters. Just skip this part and apply
@@ -449,13 +479,14 @@ this case.
 Starting this version finally syncs animations and has smoothed
 movement:
 
-![](../img/tutorial-marcopolo/image019.png)
+<figure>
+<img src="{{ IMG }}/image019.png" />
+</figure>
 
 Notice how the Editor (left) shows the same animation as the standalone
 on top (right).
 
-Shout and Respond
-=================
+## Shout and Respond
 
 It would be cool if our monsters actually talk. We could record
 something or just look around the web for a text to speech synthesizer.
@@ -481,7 +512,9 @@ script “AudioRpc”. Add the methods “Marco” and “Polo” with the RPC
 attribute. Also add public AudioClip fields, so you can reference the
 sound files to play them.
 
-![](../img/tutorial-marcopolo/image020.png)
+<figure>
+<img src="{{ IMG }}/image020.png" />
+</figure>
 
 Add this “AudioRpc” now to the “monsterprefab” and apply the two sound
 files to the references.
@@ -489,7 +522,9 @@ files to the references.
 For convenience, let’s just add two buttons to the RandomMatchmaker GUI
 and call the RPCs there:
 
-![](../img/tutorial-marcopolo/image021.png)
+<figure>
+<img src="{{ IMG }}/image021.png" />
+</figure>
 
 Note that there are different PhotonTargets options. We’re using “All”
 now, to play the sound locally, too.
@@ -507,10 +542,11 @@ RPCs are called on disables scripts, too. This could be annoying but
 most likely it’s a good thing. If you want to skip RPCs on disabled
 scripts, check: .enabled.
 
-![](../img/tutorial-marcopolo/image022.png)
+<figure>
+<img src="{{ IMG }}/image022.png" />
+</figure>
 
-Switch “It”
-===========
+## Switch “It”
 
 So far, we can call out and answer. What’s missing is a basic game logic
 to know who is “it” and to tag others.
@@ -525,7 +561,7 @@ PhotonNetwork.playerList we can easily find out if we’re the first one.
 ### Player IDs
 
 Photon uses a player “ID” or “playerNumber” to mark each of the players
-in a room. It’s an int, which makes it relatively small in terms of
+in a room. It’s an integer, which makes it relatively small in terms of
 data. As it’s not re-assigned ever, we can “talk” about players in a
 room by this ID.
 
@@ -533,7 +569,9 @@ The ID of our local client is stored in PhotonNetwork.player.ID. If
 we’re alone, we’ll save this into “playerWhoIsIt”, a static field which
 is easy to access it in different scripts.
 
-![](../img/tutorial-marcopolo/image023.png)
+<figure>
+<img src="{{ IMG }}/image023.png" />
+</figure>
 
 When more players are joining, we need to let them know who is currently
 “it”. PUN calls OnPhotonPlayerConnected() when someone new arrives , so
@@ -542,7 +580,9 @@ reacting to that is easy.
 We will create a method “TaggedPlayer” to set “playerWhoIsIt” and make
 it a RPC, so it can be called by anyone.
 
-![](../img/tutorial-marcopolo/image024.png)
+<figure>
+<img src="{{ IMG }}/image024.png" />
+</figure>
 
 ### Scenic PhotonView
 
@@ -562,7 +602,9 @@ PhotonNetwork.isMasterClient.
 
 Combined, this looks like so:
 
-![](../img/tutorial-marcopolo/image025.png)
+<figure>
+<img src="{{ IMG }}/image025.png" />
+</figure>
 
 ### Left behind
 
@@ -573,7 +615,9 @@ PUN will call OnPhotonPlayerDisconnected() when anyone leaves. We should
 find out if the player who left is “it” and assign a new one. Again,
 this work is only done by one player, the master.
 
-![](../img/tutorial-marcopolo/image026.png)
+<figure>
+<img src="{{ IMG }}/image026.png" />
+</figure>
 
 ### Being Hit
 
@@ -594,7 +638,9 @@ spheres.
 We also just care about hits if our player is currently “it”. If we hit
 some other monster, tag it!
 
-![](../img/tutorial-marcopolo/image027.png)
+<figure>
+<img src="{{ IMG }}/image027.png" />
+</figure>
 
 Using the static TagPlayer() method, it’s very easy to tag another
 player.
@@ -603,10 +649,11 @@ The buttons for “Marco” and “Polo” are still both shown for any player.
 This can be changed easily by checking “playerWhoIsIt”, too. We show
 “Marco” only we are “it”.
 
-![](../img/tutorial-marcopolo/image028.png)
+<figure>
+<img src="{{ IMG }}/image028.png" />
+</figure>
 
-Conclusion
-==========
+## Conclusion
 
 We now have small prototype of a simple game. A lot is missing, sure,
 but we definitely have the basics covered. Our game finds players in
