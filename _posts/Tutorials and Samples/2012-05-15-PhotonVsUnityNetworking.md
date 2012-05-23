@@ -7,8 +7,7 @@ tags: [sample, quickstart, unity, overview]
 {% include globals %}
 
 
-Various topics
---------------
+## Various topics
 
 ### Differences to Unity Networking
 
@@ -44,7 +43,7 @@ your dedicated Photon server.
 ##### 4. Price
 
 pke the Unity Networking solution, the Photon Unity Networking plugin is
-free as well. \
+free as well.
  You can subscribe to use [Photon Cloud hosting
 service](http://www.exitgamescloud.com/) for your game. Alternatively,
 you can rent your own servers and run Photon on them. The free pcense
