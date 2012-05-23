@@ -6,14 +6,6 @@ tags: [comparison, quickstart]
 ---
 {% include globals %}
 
-## Introduction
-
-Welcome to the <em>Photon Cloud</em> documentation! 
-If you are looking for the <strong>Photon Server</strong> documentation, procced here.
-
-If you are new to the world of Photon check out the table below. It will give you an qucik overview of our
-two different Photon products, so you can decide what best suits your needs.
-
 ## Overview
 
 Photon Cloud is a fully managed service run by the experts of Exit
