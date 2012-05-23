@@ -14,7 +14,8 @@ If you are looking for the <strong>Photon Cloud</strong> documentation, please g
 
 If you are completely new to the world of Photon scroll down to the comparison chart below. It will help you to understand the differences and what Photon product better suits your needs.
 
-This documentation is split into the following 3 topics, clicking on one of the following images will directly redirect you there. 
+This documentation is split into the following 3 topics, clicking on one of the following buttons will directly redirect you there. 
+Alternatively you can choose the topic in the navigation on the left-hand side.
 
 <div class="aC">
 <a href="url" class="button server mR">Getting Started</a> 
@@ -25,13 +26,17 @@ This documentation is split into the following 3 topics, clicking on one of the 
 
 ## Overview
 
-The <strong>Photon Server</strong> is a server application that you can run and host on machines of your choice. Fully customizable and the authorative control 
+<p>
+<strong>Photon Server</strong> is a server application that you can run and host on machines of your choice. Fully customizable and the authorative control 
 gives you the freedom to configure and set up your own infrastructure 
 for multiplayer enabled applications.
+</p>
 
-The <strong>Photon Cloud</strong> is a fully managed service run by the experts of Exit Games. You can completely concentrate on your application client while
+<p>
+<strong>Photon Cloud</strong> is a fully managed service run by the experts of Exit Games. You can completely concentrate on your application client while
 hosting, server operations and scaling is all taken care of in the
 Photon Cloud.
+</p>
 
 ## Cloud versus Self-Hosting
 
