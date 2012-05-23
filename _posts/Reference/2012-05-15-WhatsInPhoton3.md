@@ -8,18 +8,19 @@ tags: [overview, quickstart]
 
 
 ### New
+<p>
+<strong> 1. High Performance S2S Api (native/c++) </strong>
 
-<strong> 1.    High Performance S2S Api (native/c++) </strong>
-
-    A while back we introduced the TCPClient a managed class better
-    suited for server to server communication than the standard client
-    library. The TCPClient had two disadvantages: first the programming
-    model on both ends of the connection was different (TCPClient on one
-    side, Peer on the other), second it was designed for low-bandwidth
-    communication. With this release photon can setup a connection to
-    other photon instances leveraging the networking power of the photon
-    core while allowing to use the same programming model using peers on
-    both ends of the connection.
+A while back we introduced the TCPClient a managed class better
+suited for server to server communication than the standard client
+library. The TCPClient had two disadvantages: first the programming
+model on both ends of the connection was different (TCPClient on one
+side, Peer on the other), second it was designed for low-bandwidth
+communication. With this release photon can setup a connection to
+other photon instances leveraging the networking power of the photon
+core while allowing to use the same programming model using peers on
+both ends of the connection. 
+</p>
 
 2.  **Load Balancing**
 
