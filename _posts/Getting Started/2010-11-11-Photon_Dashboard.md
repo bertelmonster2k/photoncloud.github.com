@@ -66,8 +66,7 @@ Check Windows' Performance Monitor to see the installed counters:
 Photon is writing data to these counters automatically once it is
 started.
 
-Publish counters to the Dashboard
----------------------------------
+## Publish counters to the Dashboard
 
 ### Publishing In-Memory Counters
 
@@ -123,8 +122,7 @@ by the different parts of Photon, and how they are published:
 <figcaption>Photon's Performance Counters</figcaption>
 </figure>
 
-The Photon Dashboard
---------------------
+## The Photon Dashboard
 
 The Photon Dashboard is a service that receives the performance counter
 data which is published by Photon's CounterPublisher. It's making use of
