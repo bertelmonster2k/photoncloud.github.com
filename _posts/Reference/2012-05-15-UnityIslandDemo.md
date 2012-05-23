@@ -6,8 +6,7 @@ tags: [sample, unity, demo, mmo]
 ---
 {% include globals %}
 
-MMO Island Demo
----------------
+## MMO Island Demo
 
 The MMO Island Demo is a visually rich, 3d demo client that uses the MMO
 Application. You can either run it many times to get an impression of
@@ -41,7 +40,7 @@ multiple connections.
 #### More players
 
 To simulate more players on a single machine, use [the WinGrid
-Demo](/mmo/democlientwingrid). It is also in the Server SDK but must be
+Demo](/democlientwingrid). It is also in the Server SDK but must be
 built first.
 
 Open the solution \\src-server\\Mmo\\Photon.Mmo.sln in Visual Studio or
