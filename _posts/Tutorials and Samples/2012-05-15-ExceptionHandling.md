@@ -6,11 +6,7 @@ tags: [how-to, sample, overview]
 ---
 {% include globals %}
 
-Photon Exception Handling
-=========================
-
-Photon 2.6 and before:
-----------------------
+## Photon 2.6 and before:
 
 With Photon 3.0 the exception handling went through a complete redesign.
 In previous versions the strategy was to catch all exceptions inside the
@@ -32,8 +28,7 @@ facade. This design had several drawbacks:
     controlled by the developer raised the unhandled exceptions handler
     and terminated the process
 
-New with Photon 3.0:
---------------------
+## New with Photon 3.0:
 
 -   **unhandled exception event handler is always called**: exceptions
     not handled by the developers code will always raise the unhandled
@@ -64,8 +59,7 @@ supported by Photon on a per Application config. This mode is set per
 instance (UnhandledExceptionPolicy = "Ignore") - see "Configuring the
 UnhandledException Policy" section below.
 
-Suggestions for the usage of the UnhandledExceptionPolicies
------------------------------------------------------------
+## Suggestions for the usage of the UnhandledExceptionPolicies
 
 Microsoft introduced the "Terminate Process" as new default policy with
 .Net 2.0 with following statement quoted from [Exceptions in Managed
@@ -125,8 +119,7 @@ an unexpected exception we recommend setting "ProduceDump" is always set
 for details see Photon Core Debugging" - sending us the generated dump
 files and logs will help us to fix the issue.
 
-Logging Unhandled Exceptions
-----------------------------
+## Logging Unhandled Exceptions
 
 As depicted in the figure below an unhandled exception event is raised
 first in the context of the custom application (1) where the developer
@@ -136,7 +129,10 @@ raises the event in the default application domain - which in the case
 of Photon is the PhotonHostRuntime. Because of this Photon is able to
 log the exception in b).
 
-![](../img/ExceptionHandling-1.png) Logging of Unhandled Exeptions
+<figure>
+<img src="{{ IMG }}/ExceptionHandling-1.png" />
+<figcaption>Logging of Unhandled Exeptions</figcaption>
+</figure>
 
 Photon Loggingfile default path/filenames
 
@@ -144,8 +140,7 @@ Photon Loggingfile default path/filenames
 -   [\$PhotonBaseDir]**\\bin\_**[\$OS]**\\log\\PhotonCLR.log**
 -   [\$PhotonBaseDir]**\\log\\**[\$ApplicationName]**.log**
 
-Configuring the UnhandledException Policy
------------------------------------------
+## Configuring the UnhandledException Policy
 
 ~~~~ {.code}
         
@@ -161,8 +156,7 @@ Configuring the UnhandledException Policy
 UnhandledExceptionPolicy can be: ReloadAppDomain, Ignore or
 TerminateProcess
 
-Photon Core Debugging
----------------------
+## Photon Core Debugging
 
 ~~~~ {.code}
         
