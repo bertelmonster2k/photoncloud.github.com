@@ -32,7 +32,6 @@ compile errors:
 
 <figure>
 <img src="{{ IMG }}/CompileErrors.PNG" />
-<figcaption>"Run as application" in Photon Control</figcaption>
 </figure>
 
 
