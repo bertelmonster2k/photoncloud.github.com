@@ -6,9 +6,6 @@ tags: [sample, quickstart, how-to]
 ---
 {% include globals %}
 
-Quickstart: Load Balancing Demo
-===============================
-
 Photon is a light-weight and sophisticated way to use middleware to free
 you from all the hassle of programming network code. Common operations
 and methods already implemented within the Photon middleware will give
@@ -24,8 +21,7 @@ used in the context of this demo. Easy readable C\# code samples will be
 used in order to illustrate what Photon enables you to do right out of
 the box.
 
-Connect To Master Server
-------------------------
+## Connect To Master Server
 
 The first thing you need to do is to connect your client to the cloud.
 We call this process connecting to the Master Server. From there on the
@@ -81,8 +77,7 @@ join rooms. At this point players can't communicate or interact with
 each other. This is where the concept of rooms comes into play. Read on
 to see what you need to do to connect the players to each other.
 
-Create Room / Join Room
------------------------
+## Create Room / Join Room
 
 A room can be considered as a seperate area where players "meet". If
 they are in the same room, players can send and receive events from
@@ -160,8 +155,7 @@ explanations as the operation is speaking for itself:
 
 Let's see how the players can now interact with each other.
 
-Send Events
------------
+## Send Events
 
 For clients to interact with each other, we use a simple event system.
 Using events is the main way of sending and receiving fast and reliable
