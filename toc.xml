@@ -1,0 +1,24 @@
+---
+title: Photon Cloud Docs
+main_category: photon-cloud
+main_categories: [photon-server, photon-cloud]
+sidebar_categories: [getting_started, tutorials, references]
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+<toc>
+{% for cat in (page.sidebar_categories) %}
+    
+    <cat title="{{ cat | replace:'_',' ' }}">
+    
+    {% for post in site.posts reversed %}
+    
+        {% if post.categories contains page.main_category %}
+            <entry uri="{{ post.url }}{{ GET }}" title="{{ post.title }}" />
+        {% endif %}
+        
+    {% endfor %}
+    
+    </cat>
+            
+{% endfor %}
+</toc>
