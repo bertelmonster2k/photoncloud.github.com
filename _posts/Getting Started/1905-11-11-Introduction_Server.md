@@ -1,12 +1,30 @@
 ---
 layout: article
-title: Cloud versus Self-Hosting
-categories: [photon-cloud, photon-server, getting_started]
+title: Introduction
+categories: [photon-server, getting_started]
 tags: [comparison, quickstart]
 ---
 {% include globals %}
 
+## Introduction
+Welcome to the Photon documentation pages!
+This documentation is seperated into two areas, one for each of our products in the Photon product line.
+
+Currently you are in the <strong>Photon Server</strong> area.
+
+If you are looking for the <strong>Photon Cloud</strong> documentation, please go over [here] (doc.exitgames.com/photon-cloud).
+
+This documentation is split into the following 3 topics, clicking on one of these images will directly redirect you there. If you are completely new to the world of Photon scroll down to the comparison chart below. It will help you to understand the differences and what Photon product better suits your needs.
+
+TBD IMAGES
+
+
 ## Overview
+
+Photon Server is a server application that you can run and host on 
+machines of your choice. Fully customizable and the authorative control 
+gives you the freedom to configure and set up your own infrastructure 
+for multiplayer enabled applications.
 
 Photon Cloud is a fully managed service run by the experts of Exit
 Games. You can completely concentrate on your application client while
