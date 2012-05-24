@@ -1,0 +1,201 @@
+﻿@charset "UTF-8";
+/*!
+ * Copyright 2011 Exit Games GmbH, http://www.exitgames.com/
+ * All rights reserved.
+ *
+ * @fileOverview Exit Games' site specific CSS
+ * 
+ * @author Stefan E. Christiansen, sec@exitgames.com
+ */
+
+/*    
+   .rightCol {
+       float: right;
+       text-overflow: ellipsis;
+       overflow: hidden;
+       transition: width ease-in-out 500ms;
+           -o-transition: wdith ease-in-out 500ms;
+           -moz-transition: width ease-in-out 500ms;
+           -webkit-transition: width ease-in-out 500ms;
+       width: 0;
+   }
+    
+   .rightCol.show {
+       width: 250px;
+       opacity: 1;
+   }
+
+#menuToggle {
+    background: #999;
+    border-top-left-radius: 4px;
+        -moz-border-radius-topleft: 4px;
+        -webkit-border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+        -moz-border-radius-topright: 4px;
+        -webkit-border-top-right-radius: 4px;
+    color: #fff;
+    float: right;
+    height: 2.5em;
+    line-height: 2.5em;
+    margin-left: -130px; /* rotation mid is center, position relatively using margins ... 
+    margin-top: 149px; /* 125px offset + 20px top margin + 4px border radius of menu 
+    padding-left: 2ex;
+    position: fixed; 
+    transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    width: 250px;
+}
+*/
+
+
+doc {
+    display: block;
+    overflow: hidden;
+}
+
+    doc article {
+        padding: 2.615em 1.618em;
+    }
+
+
+.menu {
+    width: 17.8571em;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* IE7 F****P */
+*.menu,
+*.menu ul {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+    .menu *,
+    .menu a {
+        color: #4f7191;
+        cursor: pointer;
+        display: block;
+    }
+    .menu .active a {
+        color: #444;
+    }
+    .menu .active > a {
+        color: #fff;
+    }
+    
+        /* adding bullets and non-breaking-space */
+        .menu li li a:before {
+            content: '\00b7\00a0';
+        }
+        .menu li li.active a:before {
+            content: '\2022\00a0';
+        }
+
+    .menu > li {
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+    }
+    .menu > li:first-child {
+        border-top: 0;
+    }
+    .menu > li:last-child {
+        border-bottom: 0;
+    }
+    
+    /* rounded corners' setup */
+    .menu > ul li:first-child,
+    .menu li:first-child {
+        border-top-left-radius: 4px;
+            -moz-border-radius-topleft: 4px;
+            -webkit-border-top-left-radius: 4px;
+        border-top-right-radius: 4px;
+            -moz-border-radius-topright: 4px;
+            -webkit-border-top-right-radius: 4px;
+    }
+    
+    .menu li:last-child,
+    .menu li.active:last-child {
+        border-bottom-left-radius: 4px;
+            -moz-border-radius-bottomleft: 4px;
+            -webkit-border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+            -moz-border-radius-bottomright: 4px;
+            -webkit-border-bottom-right-radius: 4px;
+    }
+   
+    .menu li {
+        display: block;
+        line-height: 2.5em;
+        list-style-type: none;
+        margin-left: 0;
+        overflow: hidden;
+        padding-bottom: 0;
+        text-indent: 2ex;
+        text-overflow: ellipsis;
+            -o-text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
+        .menu li li {
+            border-radius: 0 !important;
+                -moz-border-radius: 0 !important;
+                -webkit-border-radius: 0 !important;
+            padding-left: 2ex;
+            height: 0;
+            *height: auto;  /* ie6 ie7 */
+            height: auto\9; /* ie8 ie9 */
+        }
+   
+    /* 1st active / targeted */
+    .menu li:target li {
+        height: auto;
+        opacity: 1;
+    }
+
+    .menu li:target {
+        background-color: #ccc;
+    }
+    .menu li.target:hover {
+        background-color: #999;
+    }
+
+    .menu li.active {
+        background-color: #4c4e54;
+    }
+    .menu li.active:hover {
+        background-color: #3c3d43;
+    }
+
+        /* 2nd+ */
+        .menu li.active li {
+            background-color: #ddd;
+        }
+        .menu li.active li:hover {
+            background-color: #ccc;
+        }
+        
+        /* the actual active items */
+        .menu li.active li.active {
+            background-color: #fff;
+        }
+            .menu li.active li.active a,
+            .menu li.active li.active a:hover {
+                color: #444;
+            }
+ 
+    /* 1st inactive */
+    .menu li {
+        background-color: #eee;
+    }
+    .menu li:hover {
+        background-color: #ccc;
+    }
+
+        /* 2nd+ */
+        .menu li li:hover {
+            background-color: #ddd;
+        }
