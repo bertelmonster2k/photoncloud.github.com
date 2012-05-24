@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Boot Camp Demo: Frags And Respawns
+title: Boot Camp Demo - Frags And Respawns
 categories: [photon-cloud, tutorials]
 tags: [sample, how-to, unity, demo]
 ---

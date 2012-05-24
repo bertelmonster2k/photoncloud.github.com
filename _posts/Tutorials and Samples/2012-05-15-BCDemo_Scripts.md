@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Boot Camp Demo: Scripts
+title: Boot Camp Demo - Scripts
 categories: [photon-cloud, tutorials]
 tags: [sample, how-to, unity, demo]
 ---

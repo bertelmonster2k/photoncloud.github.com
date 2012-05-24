@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Boot Camp Demo: Objective
+title: Boot Camp Demo - Objective
 categories: [photon-cloud, tutorials]
 tags: [sample, how-to, unity, demo]
 ---

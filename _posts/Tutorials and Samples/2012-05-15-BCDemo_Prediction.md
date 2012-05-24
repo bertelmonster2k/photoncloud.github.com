@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Boot Camp Demo: Prediction
+title: Boot Camp Demo - Prediction
 categories: [photon-cloud, tutorials]
 tags: [sample, how-to, unity, demo]
 ---
