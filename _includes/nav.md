@@ -12,7 +12,7 @@
         <div class="iP nav">
                 
             <a class="img" href="http://cloud.exitgames.com/" rel="nofollow">
-                <img src="{{ SHAREDIMG }}/img/logo.photoncloud.nav.png" alt="Photon Cloud" title="Zero Server Hassle, Access Photon Cloud." />
+                <img src="{{ SHAREDIMG }}/logo.photoncloud.nav.png" alt="Photon Cloud" title="Zero Server Hassle, Access Photon Cloud." />
             </a>
                 
             <a class="img hover" href="http://www.exitgames.com/">
