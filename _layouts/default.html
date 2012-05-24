@@ -17,6 +17,10 @@ main_categories: [photon-server, photon-cloud]
     <meta name="author" content="{{ site.author.name }}" />
     <meta name="viewport" content="width=device-width; initial-scale=1.0" />
     
+    <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://blog.exitgames.com/?feed=rss2" />
+    <link rel="alternate" type="text/xml" title="RSS" href="http://blog.exitgames.com/?feed=rss" />
+    <link rel="alternate" type="application/atom+xml" title="Atom" href="http://blog.exitgames.com/?feed=atom" />
+    
     <link href="{{ SHAREDCSS }}/eg.css" rel="stylesheet" media="all">
 
     <link rel="shortcut icon" href="{{ SHARED }}/favicon.ico" />
@@ -43,11 +47,21 @@ main_categories: [photon-server, photon-cloud]
 
 <body>
 <div class="page">
+    
+    {% include nav.md %}
 
     {{ content }}
     <b class="cA"></b>
 
     <footer role="contentinfo">
+        
+        <div style="position: absolute; right: 1.38em; z-index: 1; bottom: 0;">
+            <a class="cnct top white email" href="mailto:developer@exitgames.com?subject=Question on @product" title="Send us an e-mail.">&nbsp;</a>
+            <a class="cnct top white facebook" href="http://www.facebook.com/exitgames" title="Become a friend on facebook.">&nbsp;</a>
+            <a class="cnct top white twitter" href="http://www.twitter.com/exitgames" title="Follow us on Twitter.">&nbsp;</a>
+            <a class="cnct top white rss" href="http://blog.exitgames.com/" title="Read our blog.">&nbsp;</a>
+        </div>
+        
         <div class="iP">
             <div class="mod">
                 &copy;<time datetime="2011-10-18">2011</time>
@@ -56,6 +70,7 @@ main_categories: [photon-server, photon-cloud]
                 <a class="footerLink" href="http://www.exitgames.com/Account/LicenseTerms" rel="nofollow">Photon License Terms</a>
             </div>
         </div>
+        
     </footer>
     
 </div>
