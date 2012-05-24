@@ -1,5 +1,4 @@
-<div class="mod rightCol">
-    <div class="menu">
+<aside class="mod rightCol">
 
     {% for product in (page.main_categories) %}
         {% if product == 'photon-server' %}
@@ -8,13 +7,12 @@
             {% assign GET = '?p=2' %}
         {% endif %}
     
-        <ul class="hide" id="nav-{{ product }}">
+        <ul class="menu mT hide" id="nav-{{ product }}">
         {% for cat in (page.sidebar_categories) %}
         
-                <li>
-                    <h3>
-                        <a href="#">{{ cat | replace:'_',' ' | capitalize }}</a>
-                    </h3>
+                <li id="{{ cat }}">
+                
+                    <a href="#{{ cat }}">{{ cat | replace:'_',' ' | capitalize }}</a>
                     
                     <ul class="js-guides">
                 {% for post in site.posts reversed %}
@@ -38,5 +36,4 @@
     
     {% endfor %}
 
-    </div>
-</div>
+</aside>
