@@ -1,8 +1,10 @@
 ---
-layout: article
-title: Table Of Contents
+layout: page
+title: Photon Cloud Docs
+main_category: photon-cloud
+main_categories: [photon-server, photon-cloud]
+sidebar_categories: [getting_started, tutorials, references]
 ---
+{% include toc.md %}
 
-<a href="{{ BASE_PATH }}/photon-server.html?p=1">Photon Server Docs</a>
-<br />
-<a href="{{ BASE_PATH }}/photon-cloud.html?p=2">Photon Cloud Docs</a>
+... use the table of contents to navigate **Photon Cloud Documentation** ...
