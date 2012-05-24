@@ -63,8 +63,11 @@ main_categories: [photon-server, photon-cloud]
         </div>
         
         <div class="iP">
-            <div class="mod">
-                &copy;<time datetime="2011-10-18">2011</time>
+            <div class="mod aR">
+                <a class="img fL" href="http://www.exitgames.com/" id="logo" rel="nofollow">
+                    <img src="{{ SHAREDIMG }}/logo_exitgames.png")" alt="Exit Games" title="Exit Games" />
+                </a>
+                &copy;<time datetime="{{ site.time | date_to_string }}">2012</time>
                 <a class="footerLink" href="http://www.exitgames.com/" target="_blank" rel="nofollow">Exit Games</a>&reg;,&nbsp;all rights reserved.
                 <a class="footerLink" href="http://www.exitgames.com/Account/TermsOfUse" rel="nofollow">Terms of Use</a> | 
                 <a class="footerLink" href="http://www.exitgames.com/Account/LicenseTerms" rel="nofollow">Photon License Terms</a>
@@ -75,95 +78,113 @@ main_categories: [photon-server, photon-cloud]
     
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script src="{{ SHAREDJS }}/jquery.toc.js"></script>
-<script src="{{ SHAREDJS }}/jquery.beautyOfCode.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+<script type="text/javascript" src="{{ SHAREDJS }}/jquery.toc.js"></script>
+    <script type="text/javascript" src="{{ SHAREDJS }}/sh/scripts/shCore.js"></script>
+        <script type="text/javascript" src="{{ SHAREDJS }}/sh/scripts/shBrushCSharp.js"></script>
+        <script type="text/javascript" src="{{ SHAREDJS }}/sh/scripts/shBrushJScript.js"></script>
+        <script type="text/javascript" src="{{ SHAREDJS }}/sh/scripts/shBrushPlain.js"></script>
+        <script type="text/javascript" src="{{ SHAREDJS }}/sh/scripts/shBrushXml.js"></script>
+    <link type="text/css" rel="stylesheet" href="{{ SHAREDJS }}/sh/styles/shCore.css"/>
+    <link type="text/css" rel="Stylesheet" href="{{ SHAREDJS }}/sh/styles/shThemeDefault.css" />
+<script type="text/javascript" src="{{ SHAREDJS }}/jquery.fullsize/jquery.fullsize.js"></script>
 
 <script>
     jQuery.noConflict();
-
-    (function () {
-        var ga = document.createElement('script');
-        ga.type = 'text/javascript';
-        ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ga, s);
-    })();
-
-    jQuery(document).ready(function () {
-        jQuery.toc('#doc h1, #doc h2, #doc h3').appendTo('#toc').attr('class', 'toc');
+    
+    jQuery(document).ready(function() {
         
         jQuery('#nav-' + getActiveProductFromUrl()).removeClass('hide');
+        
+        // insert table of contents within #toc
+        jQuery.toc('#doc h1, #doc h2, #doc h3').appendTo('#toc').attr('class', 'toc');
+        
+        // attach fullsize view for images in <figure ... /> which are not rendered in their original size
+        jQuery('figure > img:first-child').each(function() {
+            var tmpImg = new Image();
+            var originalHeight = 0;
+            var originalWidth = 0;
 
-        jQuery.beautyOfCode.init({
-            theme: 'Default',
-            brushes: ['Xml', 'CSharp', 'Plain', 'JScript'],
-            defaults: {
-                'collapse': false,
-                'gutter': true,
-                'tab-size': 4,
-                'wrap-lines': true
-            },
-            ready: function () {
-                jQuery.beautyOfCode.beautifyAll();
+            jQuery(tmpImg).load(function() {
+                originalHeight = jQuery(this).height();
+                originalWidth = jQuery(this).width();
+            }).attr('src', jQuery(this).attr('src'));
+            
+            jQuery(tmpImg).remove();
 
-                jQuery('.codeSamples').each(function (i) {
-
-                    var codeSelectHTML = '';
-
-                    codeSelectHTML += '<form>';
-                    codeSelectHTML += '<label for="select-' + i + '">Select your preferred code language:</label>&nbsp;';
-                    codeSelectHTML += '<select id="select-' + i + '" size="1">'
-
-                    jQuery(this).children('.syntaxhighlighter').each(function (j) {
-
-                        // "detect"* language / brush
-                        // (*) assuming the last class name identifying the language ...
-                        var language = jQuery.trim(jQuery(this).attr('class').substr(jQuery(this).attr('class').lastIndexOf(' ')));
-
-                        codeSelectHTML += '<option value="' + jQuery(this).attr('id') + '"';
-                        if (jQuery(this).attr('id') === jQuery(this).parent().children(':first').attr('id')) {
-                            codeSelectHTML += ' selected="selected"';
-                        }
-                        else {
-                            // add this class to your CSS: .hide { display: none; visibility: hidden; }
-                            jQuery(this).addClass('hide');
-                        }
-                        jQuery(this).addClass('codeSample'); // helps toggling onMouseUp, see below
-                        //codeSelectHTML += ' onmouseup="showCodeSample(jQuery(this).attr(\'value\'));">';
-                        codeSelectHTML += '>' + language;
-                        codeSelectHTML += '</option>';
-                    });
-
-                    codeSelectHTML += '</select>'
-                    codeSelectHTML += '</form>';
-                    jQuery(this).prepend(codeSelectHTML);
-
-                    jQuery('#select-' + i).change(function () {
-                        showCodeSample(jQuery(this).val());
-                    });
-
-                });
+            if ((originalWidth / originalHeight) !== (jQuery(this).width() / jQuery(this).height())) {
+                jQuery(this).fullsize();
             }
         });
-    });
-
-    function showCodeSample(ID) {
-
-        var codeSample = jQuery('#' + ID);
-
-        if (codeSample.hasClass('hide')) {
-            codeSample.siblings('.codeSample').each(function () {
-                // add class 'hide' only for elements not yet hidden
-                if (!jQuery(this).hasClass('hide')) {
+        
+        // code highlighting preferences
+        SyntaxHighlighter.defaults.toolbar = false;
+        SyntaxHighlighter.config.tagName = 'code';
+        
+        // single code highlighting
+        jQuery('pre.code > code, code.code').each(function (i, elem) {
+            SyntaxHighlighter.highlight(null, elem);
+        });
+        
+        // multi-language code highlighting
+        jQuery('.codeSamples').each(function(i) {
+                    
+            var selectHtml = '';
+            
+            selectHtml += '<form>';
+            selectHtml += '<label for="select-' + i + '">Select your preferred code language:</label>&nbsp;';
+            selectHtml += '<select id="select-' + i + '" size="1">'
+            
+            jQuery(this).find('.syntaxhighlighter').each(function(j) {
+                
+                // detect language / brush
+                // assuming the last class name identifying the language ...
+                var language = jQuery.trim(jQuery(this).attr('class').substr(jQuery(this).attr('class').lastIndexOf(' ')));
+                
+                // ... and assuming the ID of the newly rendered element is unique
+                selectHtml += '<option value="' + jQuery(this).attr('id') + '"';
+                
+                // select the first code snippet as default
+                if (j === 0) {
+                    selectHtml += ' selected="selected"';
+                }
+                else {
                     jQuery(this).addClass('hide');
-                };
+                    jQuery(this).parents('pre.code').first().addClass('hide');
+                }
+                
+                selectHtml += '>' + language;
+                selectHtml += '</option>';
+                
+                jQuery(this).addClass('codeSample');
             });
-
+            
+            selectHtml += '</select>'
+            selectHtml += '</form>';
+            jQuery(this).prepend(selectHtml);
+            
+            jQuery('#select-' + i).change(function() {
+                showCodeSample(jQuery(this).val());
+            });
+            
+        });
+    });
+    
+    // show / hide code siblings
+    function showCodeSample(ID) {
+        
+        var codeSample = jQuery('#' + ID);
+        
+        if (codeSample.hasClass('hide')) {
+            codeSample.parents('.codeSamples').first().find('pre.code:not(.hide)').each(function (i, elem) {
+                jQuery(elem).addClass('hide');
+                jQuery(elem).find('.syntaxhighlighter').addClass('hide');
+            });
+            
             codeSample.removeClass('hide');
+            codeSample.parents('pre.code').first().removeClass('hide');
         }
-
+        
         // stop further event bubbling
         return false;
     }
