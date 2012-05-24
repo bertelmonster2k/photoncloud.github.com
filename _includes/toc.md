@@ -1,6 +1,6 @@
 <aside class="mod rightCol">
 
-    <ul class="menu mT hide" id="nav-{{ product }}">
+    <ul class="menu mT">
     {% for cat in (page.sidebar_categories) %}
     
             <li id="{{ cat }}">
