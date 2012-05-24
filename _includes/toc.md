@@ -14,10 +14,10 @@
                 {% if post.categories contains cat %}
                     {% if page.title == post.title %}
                         <li class="active">
-                            <a href="{{ post.url }}{{ GET }}">{{ post.title }}</a></li>
+                            <a href="{{ post.url }}{{ GET }}#{{ cat }}">{{ post.title }}</a></li>
                     {% else %}
                         <li>
-                            <a href="{{ post.url }}{{ GET }}">{{ post.title }}</a></li>
+                            <a href="{{ post.url }}{{ GET }}#{{ cat }}">{{ post.title }}</a></li>
                     {% endif %}
                 {% endif %}
                 {% endif %}
