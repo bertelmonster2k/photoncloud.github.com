@@ -1,5 +1,6 @@
-<aside>
-    <nav>
+<div class="mod rightCol">
+    <div class="menu">
+
     {% for product in (page.main_categories) %}
         {% if product == 'photon-server' %}
             {% assign GET = '?p=1' %}
@@ -36,5 +37,6 @@
         </ul>
     
     {% endfor %}
-    </nav>
-</aside>
+
+    </div>
+</div>
