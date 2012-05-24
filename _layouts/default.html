@@ -96,7 +96,8 @@ main_categories: [photon-server, photon-cloud]
     
     jQuery(document).ready(function() {
         
-        jQuery('#nav-' + getActiveProductFromUrl()).removeClass('hide');
+        // mark the active navigation tree as such
+        jQuery('ul.menu').find('.active').parents('li').first().addClass('active');
         
         // insert table of contents within #toc
         jQuery.toc('#doc h1, #doc h2, #doc h3').appendTo('#toc').attr('class', 'toc');
