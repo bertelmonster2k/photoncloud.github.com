@@ -46,17 +46,17 @@ Let's delve right into the code of our demo:
 Let's take a closer look at the arguments used in the "ConnectToMaster"
 operation:
 
-1.  The first parameter is the Application ID it identifies your application
-    within our cloud system. If you don't already have an Application ID you
+1.  **string ApplicationID** It identifies your application within our cloud system. 
+    If you don't already have an Application ID you
     can get it [here](https://www.exitgames.com/Download/Photon) for free.
     You need to insert a valid Application ID in order for this demo to
     work.
-2.  The second parameter is the version number. The version number
+2.  **string VersionNumber** The second parameter is the version number. The version number
     is a string that you can choose by yourself - it is used to make sure
     that only clients with the same version number get matched and can
     communicate with each other. This allows you to have different builds of
     your application online and playable!
-3.  The third parameter is the name of the player, we won't get
+3.  **string PlayerName** The third parameter is the name of the player, we won't get
     into the rocket science involved in this complex construct. Suffice to
     say it is used by other players to identify the person playing.
 
@@ -191,42 +191,40 @@ load balancing demo:
 
 The OpRaiseEvent takes the following arguments:
 
-**byte eventCode** The event code specifies the actual event that you
-want to raise. There are predefined events by Photon starting from 255
-and then moving downwards. Beginning with 1 you can define your own
-events to use in your game logic. For a complete list of predefined
-events check [here](https://www.exitgames.com/Download/Photon)!
+1.  **byte eventCode** The event code specifies the actual event that you
+    want to raise. There are predefined events by Photon starting from 255
+    and then moving downwards. Beginning with 1 you can define your own
+    events to use in your game logic. For a complete list of predefined
+    events check [here](https://www.exitgames.com/Download/Photon)!
 
-**Hashtable evData** You can fill this hashtable with all the data you
-need to transfer. This is the central data-structure you will use to
-exchange information between clients. However, recurring and
-standardized steps for your game logic (e.g. end of turn) should rather
-be send as events.
+2.  **Hashtable evData** You can fill this hashtable with all the data you
+    need to transfer. This is the central data-structure you will use to
+    exchange information between clients. However, recurring and
+    standardized steps for your game logic (e.g. end of turn) should rather
+    be send as events.
 
-**bool sendReliable** When you set this flag to "true", you switch from
-UDP to reliable UDP. This means that any packages lost during
-transmission will be re-send and that the clients will make sure that
-the packages will be interpreted in the order they've been sent. Not
-that this might affect performance in a negative way as this extra steps
-will add additional messages and data burden to overall communication.
+3.  **bool sendReliable** When you set this flag to "true", you switch from
+    UDP to reliable UDP. This means that any packages lost during
+    transmission will be re-send and that the clients will make sure that
+    the packages will be interpreted in the order they've been sent. Not
+    that this might affect performance in a negative way as this extra steps
+    will add additional messages and data burden to overall communication.
 
-**byte channelId**
-
-You can use different channels to group and prioritize events you are
-sending. We'll illustrate this functionality in a small example: Let's
-say you are using channel 1 to send relevant information about the
-position of players. You enabled reliable UDP in your game, because you
-need the extra reliability in the type of game your are envisioning. At
-some point channel 1 gets crowded by many messages because some players
-got delay and have a bad connection with a noticeable amount of packet
-loss, so a lot of messages have to be re-send. If you would now enqueue
-another important event (like the end of round), it might take some time
-for it to be acknowledged since the clients are still busy receiving all
-the position updates from channel 1. So if you dispatch an event now
-with channelId 0 it will take precedence over all the other queued
-messages. By making smart use of this feature you can raise the
-perceived responsiveness and ensure a correct flow of your game logic,
-even under mediocre connection conditions.
+4.  **byte channelId** You can use different channels to group and prioritize events you are
+    sending. We'll illustrate this functionality in a small example: Let's
+    say you are using channel 1 to send relevant information about the
+    position of players. You enabled reliable UDP in your game, because you
+    need the extra reliability in the type of game your are envisioning. At
+    some point channel 1 gets crowded by many messages because some players
+    got delay and have a bad connection with a noticeable amount of packet
+    loss, so a lot of messages have to be re-send. If you would now enqueue
+    another important event (like the end of round), it might take some time
+    for it to be acknowledged since the clients are still busy receiving all
+    the position updates from channel 1. So if you dispatch an event now
+    with channelId 0 it will take precedence over all the other queued
+    messages. By making smart use of this feature you can raise the
+    perceived responsiveness and ensure a correct flow of your game logic,
+    even under mediocre connection conditions.
 
 Last but not least there are additional overloads that you can use to
 specify the receiver groups. Please take a look
