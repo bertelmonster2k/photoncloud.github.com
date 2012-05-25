@@ -45,19 +45,16 @@ Let's delve right into the code of our demo:
 
 Let's take a closer look at the arguments used in the "ConnectToMaster"
 operation:
-
 1.  The first parameter is the Application ID it identifies your application
     within our cloud system. If you don't already have an Application ID you
     can get it [here](https://www.exitgames.com/Download/Photon) for free.
     You need to insert a valid Application ID in order for this demo to
     work.
-
 2.  The second parameter is the version number. The version number
     is a string that you can choose by yourself - it is used to make sure
     that only clients with the same version number get matched and can
     communicate with each other. This allows you to have different builds of
     your application online and playable!
-
 3.  The third parameter is the name of the player, we won't get
     into the rocket science involved in this complex construct. Suffice to
     say it is used by other players to identify the person playing.
