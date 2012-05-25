@@ -10,7 +10,7 @@
         
             <a href="#{{ cat }}">{{ cat | replace:'_',' ' | capitalize }}</a>
             
-            <ul class="js-guides">
+            <ul>
         {% for post in site.posts reversed %}
         
             {% if post.categories contains 'photon-cloud' %}
@@ -21,7 +21,7 @@
                 {% if post.subtitle %}
             
                     {% if prePostCategory == curPostCategory %}
-                        {% capture addCssClass %}2ndlevel{% endcapture %}
+                        {% assign addCssClass = ' isArticleGroup' %}
                     {% else %}
                         {% assign prePostCategory = curPostCategory %}
                         {% assign addCssClass = '' %}
@@ -30,11 +30,13 @@
                 {% endif %}
                 
                 {% if page.title == post.title %}
-                    {% capture addCssClass %}{{ addCssClass }} active{% endcapture %}
+                    {% assign activeCssClass = 'active' %}
+                {% else %}
+                    {% assign activeCssClass = '' %}
                 {% endif %}
                 
                 
-                    <li class="{{ addCssClass }}" data-postcategory="{{ curPostCategory }}">
+                    <li class="{{ activeCssClass }}{{ addCssClass }}" data-postcategory="{{ curPostCategory }}">
                         <a href="{{ post.url }}{{ GET }}#cat-{{ cat }}">{{ post.title }}</a>
                     </li>
             
