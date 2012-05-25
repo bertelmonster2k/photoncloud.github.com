@@ -11,7 +11,7 @@ This documentation is seperated into two areas, one for each of our products in 
 
 Currently you are in the <strong>Photon Cloud</strong> area.
 
-If you are looking for the <strong>Photon Server</strong> documentation, please go over [here] (doc.exitgames.com/photon-server).
+If you are looking for the <strong>Photon Server</strong> documentation, please go over [here] (doc-server.exitgames.com).
 
 If you are completely new to the world of Photon scroll down to the comparison chart below. It will help you to understand the differences and what Photon product better suits your needs.
 
