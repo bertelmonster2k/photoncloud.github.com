@@ -136,9 +136,8 @@ open up the room. In order the arguments are as follows:
 
 <figure>
 <img src="{{ IMG }}/PropertiesCloud.png" />
-<figcaption>Example For Properties</figcaption>
+<figcaption>Example for properties.</figcaption>
 </figure>
-Simple Example Properties
 
 Now that we successfully created a room, it's time for other clients to
 join! Joining a room is quick and easy and shouldn't need any further
@@ -149,9 +148,7 @@ explanations as the operation is speaking for itself:
                     public void JoinSelectedRoom(string name)
                     {
                     this.OpJoinRoom(name, this.LocalPlayer.CustomProperties);
-                    }
-                        
-                    
+                    }                    
 ~~~~
 
 Let's see how the players can now interact with each other.
