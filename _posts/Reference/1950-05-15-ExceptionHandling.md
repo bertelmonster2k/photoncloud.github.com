@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Exception Handling
-categories: [photon-cloud, photon-server, tutorials, references]
+categories: [photon-cloud, photon-server, references]
 tags: [how-to, sample, overview]
 ---
 {% include globals %}

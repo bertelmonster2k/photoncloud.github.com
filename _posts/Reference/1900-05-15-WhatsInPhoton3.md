@@ -1,6 +1,6 @@
 ---
 layout: article
-title: What's in Photon 3
+title: What's new in Photon 3
 categories: [photon-cloud, photon-server, references]
 tags: [overview, quickstart]
 ---

@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Conversion From Unity Networking
-categories: [photon-cloud, tutorials, references]
+categories: [photon-cloud, references]
 tags: [sample, how-to, unity]
 ---
 {% include globals %}
