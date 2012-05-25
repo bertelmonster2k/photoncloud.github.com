@@ -1,7 +1,7 @@
 ---
 layout: article
 title: Photon vs Unity Networking
-categories: [photon-cloud, tutorials, references]
+categories: [photon-cloud, references]
 tags: [sample, quickstart, unity, overview]
 ---
 {% include globals %}
