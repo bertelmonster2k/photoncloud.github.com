@@ -93,8 +93,32 @@
     
     jQuery(document).ready(function() {
         
-        // mark the active navigation tree as such
-        jQuery('ul.menu').find('.active').parents('li').first().addClass('active');
+        // fast paths' to menu levels
+        var menu_head = jQuery('.menu > li > a'),
+            menu_body = jQuery('.menu li > ul');
+ 
+        // mark the active navigation tree as such ...
+        // ... and open the first tab on load
+        jQuery('ul.menu').find('.active').parents('li').first().addClass('active').find('ul').first().slideDown('normal');
+ 
+        // add click listener to menu headers
+        menu_head.on('click', function(event) {
+ 
+            // disable header links, prevent page from scrolling to :target / header's #ID!
+            event.preventDefault();
+            
+            console.debug('don\'t scroll!');
+ 
+            // show and hide the tabs on click
+            if (jQuery(this).attr('class') != 'active') {
+                menu_body.slideUp('normal');
+                jQuery(this).next().stop(true, true).slideToggle('normal');
+                
+                menu_head.removeClass('active');
+                jQuery(this).addClass('active');
+            }
+ 
+        });
         
         // insert table of contents within #toc
         jQuery.toc('#doc h1, #doc h2, #doc h3').appendTo('#toc').attr('class', 'toc');
