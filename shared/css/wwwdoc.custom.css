@@ -145,11 +145,6 @@ doc {
                 -moz-border-radius: 0 !important;
                 -webkit-border-radius: 0 !important;
             padding-left: 2ex;
-            /*
-            height: 0
-            height: auto;  /* ie6 ie7 */
-           /*
-            height: auto\9; /* ie8 ie9 */
         }
         
         .menu li ul {
