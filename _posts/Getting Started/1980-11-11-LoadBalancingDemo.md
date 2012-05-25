@@ -66,11 +66,12 @@ for you! In the diagram below you can see that everything in the grey
 square is organized by Photon Cloud. The client only needs to send
 simple operations, like the ones next to the arrows.
 
+<p>
 <figure>
 <img src="{{ IMG }}/JoinMSCloud.png" />
-<figcaption>The wonderful world of Photon Cloud</figcaption>
+<figcaption>The game servers that host the rooms reside in the cloud.</figcaption>
 </figure>
-game servers that host the rooms reside in the cloud.
+</p>
 
 Now that we are connected to the Master Server we can list, create and
 join rooms. At this point players can't communicate or interact with
