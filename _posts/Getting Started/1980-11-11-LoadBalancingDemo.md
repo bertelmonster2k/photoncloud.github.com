@@ -45,6 +45,7 @@ Let's delve right into the code of our demo:
 
 Let's take a closer look at the arguments used in the "ConnectToMaster"
 operation:
+
 1.  The first parameter is the Application ID it identifies your application
     within our cloud system. If you don't already have an Application ID you
     can get it [here](https://www.exitgames.com/Download/Photon) for free.
