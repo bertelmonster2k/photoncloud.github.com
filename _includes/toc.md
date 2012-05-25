@@ -23,7 +23,7 @@
                     {% if prePostCategory == curPostCategory %}
                         {% assign addCssClass = ' isArticleGroup' %}
                     {% else %}
-                        {% assign prePostCategory = curPostCategory %}
+                        {% capture prePostCategory %}{{ curPostCategory }}{% endcapture %}
                         {% assign addCssClass = '' %}
                     {% endif %}
             
