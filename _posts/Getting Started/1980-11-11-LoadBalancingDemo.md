@@ -196,20 +196,17 @@ The OpRaiseEvent takes the following arguments:
     and then moving downwards. Beginning with 1 you can define your own
     events to use in your game logic. For a complete list of predefined
     events check [here](https://www.exitgames.com/Download/Photon)!
-
 2.  **Hashtable evData** You can fill this hashtable with all the data you
     need to transfer. This is the central data-structure you will use to
     exchange information between clients. However, recurring and
     standardized steps for your game logic (e.g. end of turn) should rather
     be send as events.
-
 3.  **bool sendReliable** When you set this flag to "true", you switch from
     UDP to reliable UDP. This means that any packages lost during
     transmission will be re-send and that the clients will make sure that
     the packages will be interpreted in the order they've been sent. Not
     that this might affect performance in a negative way as this extra steps
     will add additional messages and data burden to overall communication.
-
 4.  **byte channelId** You can use different channels to group and prioritize events you are
     sending. We'll illustrate this functionality in a small example: Let's
     say you are using channel 1 to send relevant information about the
