@@ -20,7 +20,7 @@ Alternatively you can choose the topic in the navigation on the left-hand side.
 
 <div class="aC">
 <a href="url" class="button cloud mR">Getting Started</a> 
-<a href="url" class="button cloud mR">Tutorials and Demos</a> 
+<a href="url" class="button cloud mR">Tutorials</a> 
 <a href="url" class="button cloud mR">References</a> 
 </div>
 
