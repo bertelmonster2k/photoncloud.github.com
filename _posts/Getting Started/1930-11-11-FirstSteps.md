@@ -47,6 +47,6 @@ Server SDK](http://www.exitgames.com/Download/Photon). It includes the
 binaries to run a server on suitable Windows machines and the source to
 modify the server's logic.
 
-Switching to your onw server should be simple, as the basic workflow and
+Switching to your own server should be simple, as the basic workflow and
 protocol stays intact. The Cloud App ID is no longer used and you need
 your own Photon license. Also, you have to setup your server machine.
