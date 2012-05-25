@@ -21,8 +21,8 @@ Alternatively you can choose the topic in the navigation on the right-hand side.
 
 <div class="aC">
 <a href="/FirstSteps" class="button cloud mR">Getting Started</a>
-<a href="url" class="button cloud mR">Tutorials</a>
-<a href="url" class="button cloud mR">References</a>
+<a href="/Demo_List" class="button cloud mR">Tutorials</a>
+<a href="/WhatsInPhoton3" class="button cloud mR">References</a>
 </div>
 
 
